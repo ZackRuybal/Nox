@@ -1,0 +1,67 @@
+@import "variables";
+@import "nav";
+@import "flexgrid";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic,300,300italic);
+@import "reset";
+@import "table";
+@import "utilities";
+@import "forms";
+@import "buttons";
+
+// Page Blocks
+.masthead {
+	display: block;
+	background: darken($white, 5%);
+	padding: 50px 30px;
+	margin: 15px;
+	border-radius: 5px;
+	h1 {
+		margin-bottom: .543em;
+		font-size: 36px;
+	}
+	p.text-large {
+		font-size: 24px;
+		color: darken($white, 60%);
+	}
+}
+.error-404 {
+	display: block;
+	padding: 50px 60px;
+	h1 {
+		font-size: 45px;
+		font-weight: 400;
+	}
+	p {
+		font-size: 30px;
+	}
+}
+.footer {
+	border-top: solid 1px #eee;
+	border-bottom: solid 1px #eee;
+	margin: 10px 0;
+	display: block;
+	padding: 20px;
+}
+.footer.dark {
+	background: #333;
+	border-top: solid 1px #777;
+	border-bottom: solid 1px #777;
+	color: #fff;
+}
+.footer.dark a {
+	color: #5fabd8;
+}
+.footer.stickyFooter {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+/** The Old Footer (apparently)
+.footer {
+	padding: 25px 0;
+	border-top: 1px solid #666;
+}
+.footer p {
+	margin: 0 0 10px;
+} */

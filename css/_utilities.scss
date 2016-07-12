@@ -1,0 +1,57 @@
+// Images
+.image-rounded {
+	border-radius: 6px;
+}
+.image-circle {
+	border-radius: 50%;
+}
+// Box Appearences
+.clearfix {
+	clear: both;
+}
+.show {
+	display: block !important;
+}
+.hidden {
+	display: none !important;
+}
+.invisible {
+	visibility: hidden;
+}
+.center-block {
+	display: block;
+	margin: 0 auto;
+}
+.box-margin {
+	margin: 20px 15px !important;
+}
+.small-break {
+	border-top: 1px solid #777;
+	height: 1px;
+	width: 150px;
+	display: block;
+	margin: 15px auto;
+}
+// Text Formatting
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-large { font-size: 16px; }
+.bold { font-weight: 400; }
+.underline { text-decoration: underline; }
+.italic { font-style: italic; }
+.page-heading {
+	border-bottom: 1px solid lighten(#666, 23%);
+}
+h1.text-large {
+	font-size: 45px;
+}
+// Lists
+ul.noindent {
+	padding-left: 20px;
+	margin: 0;
+}
+ol.noindent {
+	padding-left: 20px;
+	margin: 0;
+}

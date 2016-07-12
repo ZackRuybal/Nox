@@ -1,0 +1,127 @@
+// "Normal" nav
+.nav {
+	display: block;
+	height: 52px;
+	line-height: 50px;
+    background: $primary-blue;
+	.branding {
+		font-weight: 400;
+		color: $white;
+		font-size: 16px;
+		padding: 0 15px;
+		display: inline-block;
+		height: 50px;
+		line-height: 50px;
+		img {
+			width: 32px;
+			height: 32px;
+			vertical-align: middle;
+		}
+	}
+	.branding:hover {
+		text-decoration: none;
+		color: #fff;
+		background: transparent;
+	}
+}
+.nav.nav-dark {
+    background: $alt-nav !important;
+}
+.nav.nav-dark  a:hover {
+	color: darken($white, 5%);
+	text-decoration: none;
+	background: darken($white, 70%);
+}
+.nav.nav-dark .branding:hover {
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+}
+.nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.nav li {
+	display: inline;
+}
+.nav .nav-item {
+	display: inline-block;
+}
+.nav li+li {
+	margin-left: -5px;
+}
+.nav a {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	padding: 0 10px;
+}
+.nav  a:hover {
+	color: darken($white, 5%);
+	text-decoration: none;
+	background: darken($primary-blue, 2%);
+}
+.nav .pull-right {
+	float: right;
+}
+.nav .pull-left {
+	float: left;
+}
+.nav .nav-static {
+	position: fixed;
+}
+// Responsive Bits
+.nav-side {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: rgba(100,149,237,0.9);
+	color: #fff;
+	display: none;
+	border-top: 1px solid #70AA6D;
+}
+.nav-side ul { 
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.nav-side ul li {
+	background: #777;
+	display: block;
+	text-align: center;
+}
+.nav-side ul li:hover {
+	background: #333;
+}
+.nav-side li a {
+	width: 100%;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+}
+.res-only {
+	display: none !important;
+	float: right;
+	margin-top: 1px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.nav-side.nav-open {
+	margin-left: 0;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+	display: block;
+}
+
+@media (max-width: 796px) {
+	.nav-item > ul > li {
+		display: none;
+	}
+	.res-only {
+		display: block !important;
+	}
+}
