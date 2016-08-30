@@ -1627,6 +1627,19 @@ ol.noindent {
   right: 0;
 }
 
+.well {
+  background: #f2f2f2;
+  padding: 10px;
+  width: 96%;
+  display: block;
+  border: 1px solid #cccccc;
+}
+
+.well-middle {
+  border-left: none;
+  border-right: none;
+}
+
 /** The Old Footer (apparently)
 .footer {
 	padding: 25px 0;
