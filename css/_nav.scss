@@ -4,6 +4,7 @@
 	height: 52px;
 	line-height: 50px;
     background: $primary-blue;
+	z-index: 1;
 	.branding {
 		font-weight: 400;
 		color: $white;
@@ -83,7 +84,7 @@
 	display: none;
 	border-top: 1px solid #70AA6D;
 }
-.nav-side ul { 
+.nav-side ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
