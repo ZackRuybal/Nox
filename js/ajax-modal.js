@@ -55,7 +55,7 @@
             }).done(function(data) {
                 createModal(data);
             }).fail(function() {
-                createModal('There was an error.');
+                createModal("There was an error. Refer to <a href='http://x.zruybal.com/Nox/NoxFramework/wiki/Ajax-Modal-Error'>err01</a>.");
             });
 
             e.preventDefault();
