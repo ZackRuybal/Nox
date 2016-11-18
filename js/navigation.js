@@ -5,7 +5,7 @@ $('.nav .res-only').click(function() {
 	$content.slideToggle(500, function(){
 		$content.offset({ top: 50 });
 		$toggle.text(function() {
-			return $content.is(":visible") ? "Show" : "Hide";
+			return $content.is(":visible") ? "Hide" : "Show";
 		});
 	});
 });
