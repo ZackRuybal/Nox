@@ -5,17 +5,19 @@ $( document ).ready(function() {
 	$navItems.last().clone({
 		withDataAndEvents: true
 	}).appendTo($navElem);
+	$('.res-only').append('<span class="fa fa-bars"></span>');
 });
 $('.nav .res-only').click(function() {
 
 
 	$toggle = $('.res-only');
 	$appTo = $('.nav-side');
-	$appTo.slideToggle(500, function() {
+	$appTo.slideToggle(500);
+	/*, function() {
 		$toggle.text(function() {
 			return $appTo.is(":visible") ? "Hide" : "Show";
 		});
-	});
+	});*/
 
 	//$toggle = $('.res-only');
 	//$content = $('.nav .res-menu > ul');
