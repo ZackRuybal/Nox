@@ -4,3 +4,6 @@ Nox is a simple, lightweight and efficient front-end framework. The point of thi
 
 # How to use the files
 Using Nox is meant to be a simple process, however if you enjoy or need to change things for your specific project, please feel free to download the source by simply cloning the repository. If you aren't interested in getting your hands dirty, however, there will be a version of Nox in a zip file that will contain production-ready files. That is coming soon, until then just download the appropriate CSS & JS files.
+
+
+### Imported from GOGS (Go Git Service) @ [this repo](http://x.zruybal.com/Nox/NoxFramework). This is repo is what's used now and will be kept up to date.
