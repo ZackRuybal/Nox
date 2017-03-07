@@ -1509,6 +1509,16 @@ ol.noindent {
   padding: 5px 0;
 }
 
+.button-group.vertical .button {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.button-group.vertical .button + .button {
+  margin-top: 5px;
+}
+
 .button {
   display: inline-block;
   padding: 6px 12px;
@@ -1625,11 +1635,27 @@ ol.noindent {
 .masthead h1 {
   margin-bottom: .543em;
   font-size: 36px;
+  color: #666666;
 }
 
 .masthead p.text-large {
   font-size: 24px;
   color: #666666;
+}
+
+.fillPage {
+  height: -webkit-calc(100vh - 52px);
+  height: calc(100vh - 52px);
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0;
 }
 
 .error-404 {
