@@ -5,11 +5,25 @@ $primary-lightblue: #4BD7E4;
 $primary-orange: #DB6127;
 
 $dark-blue: #2c52a8;
-$alt-nav: #323232;
 
 $white: #fff;
 $black: #000;
 $lightBlack: #333;
+
+//Main nav css
+$nav-height: 52px;
+$nav-lineHeight: 50px;
+$nav-brandingWeight: 400;
+$nav-brandingFontSize: 16px;
+$nav-brandingHeight: 50px;
+$nav-brandingLineHeight: 50px;
+$nav-brandingPadding: 0 15px;
+$nav-imgHeight: 32px;
+$nav-imgWidth: 32px;
+$nav-imgVAlign: middle;
+
+// Nav variant customization
+$dark-nav: #323232;
 
 //Masthead Customize
 $mastpadding: 50px 30px;

@@ -1,22 +1,22 @@
 // "Normal" nav
 .nav {
 	display: block;
-	height: 52px;
-	line-height: 50px;
+	height: $nav-height;
+	line-height: $nav-lineHeight;
     background: $primary-blue;
 	z-index: 1;
 	.branding {
-		font-weight: 400;
+		font-weight: $nav-brandingWeight;
 		color: $white;
-		font-size: 16px;
-		padding: 0 15px;
+		font-size: $nav-brandingFontSize;
+		padding: $nav-brandingPadding;
 		display: inline-block;
-		height: 50px;
-		line-height: 50px;
+		height: $nav-brandingHeight;
+		line-height: $nav-brandingLineHeight;
 		img {
-			width: 32px;
-			height: 32px;
-			vertical-align: middle;
+			width: $nav-imgWidth;
+			height: $nav-imgHeight;
+			vertical-align: $nav-imgVAlign;
 		}
 	}
 	.branding:hover {
@@ -26,7 +26,7 @@
 	}
 }
 .nav.nav-dark {
-    background: $alt-nav !important;
+    background: $dark-nav !important;
 }
 .nav.nav-dark  a:hover {
 	color: darken($white, 5%);
