@@ -1713,12 +1713,3 @@ ol.noindent {
   border-left: none;
   border-right: none;
 }
-
-/** The Old Footer (apparently)
-.footer {
-	padding: 25px 0;
-	border-top: 1px solid #666;
-}
-.footer p {
-	margin: 0 0 10px;
-} */
