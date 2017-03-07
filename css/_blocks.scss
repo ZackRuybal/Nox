@@ -1,0 +1,70 @@
+//Masthead
+.masthead {
+	display: block;
+	background: darken($white, 5%);
+	padding: $mastpadding;
+	margin: $mastmargin;
+	border-radius: $mastBR;
+	h1 {
+		margin-bottom: .543em;
+		font-size: $mastHeaderSize;
+		color: $h1-color;
+	}
+	p.text-large {
+		font-size: 24px;
+		color: $p-color;
+	}
+}
+.fillPage {
+	height: $fillSize;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	border-radius: 0;
+}
+// 404
+.error-404 {
+	display: block;
+	padding: 50px 60px;
+	h1 {
+		font-size: 45px;
+		font-weight: 400;
+	}
+	p {
+		font-size: 30px;
+	}
+}
+// Footer
+.footer {
+	border-top: solid 1px #eee;
+	border-bottom: solid 1px #eee;
+	margin: 10px 0;
+	display: block;
+	padding: 20px;
+}
+.footer.dark {
+	background: $lightBlack;
+	border-top: solid 1px #777;
+	border-bottom: solid 1px #777;
+	color: #fff;
+}
+.footer.dark a {
+	color: #5fabd8;
+}
+.footer.stickyFooter {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.well {
+	background: darken($white, 5%);
+	padding: 10px;
+	width: 96%;
+	display: block;
+	border: 1px solid darken($white, 20%);
+}
+.well-middle {
+	border-left: none;
+	border-right: none;
+}

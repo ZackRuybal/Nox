@@ -9,3 +9,13 @@ $alt-nav: #323232;
 
 $white: #fff;
 $black: #000;
+$lightBlack: #333;
+
+//Masthead Customize
+$mastpadding: 50px 30px;
+$mastmargin: 15px;
+$mastBR: 5px;
+$mastHeaderSize: 36px; // Changes the font-size for h1 tags inside of Masthead
+$fillSize: calc(100vh - 52px); // Change the 52px if navbar height is custom
+$h1-color: darken($white, 60%);
+$p-color: darken($white, 60%);
