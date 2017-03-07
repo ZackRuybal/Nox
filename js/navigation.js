@@ -1,3 +1,4 @@
+// (c) 2017 Zack Ruybal. All rights reserved
 $( document ).ready(function() {
 	$('body').append('<div class="nav-side"></div>');
 	$navElem = $('.nav-side');

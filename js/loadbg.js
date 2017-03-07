@@ -1,3 +1,4 @@
+//(c) 2017 Zack Ruybal. All rights reserved
 $(loadBG);
 function loadBG() {
 	$elem = $('.masthead');

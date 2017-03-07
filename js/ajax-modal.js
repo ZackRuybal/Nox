@@ -1,3 +1,4 @@
+// (c) 2017 Zack Ruybal. All rights reserved
 (function($) {
     $.fn.amodal = function(opt) {
 
