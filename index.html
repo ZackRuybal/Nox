@@ -25,44 +25,47 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="masthead text-center">
-		<div>
-			<h1 class="text-large">Nox</h1>
+	<div class="fillPage masthead text-center">
+		<div class="content">
+			<h1 class="text-large" id="homeHeader">Nox</h1>
 			<p class="text-large">Nox is a beautiful, easy to use and lightweight front-end framework built for the modern web. <!--<small><a href="">More &raquo;</a></small>--></p>
 			<div class="button-group">
 				<!--<a class="button button-primary" href="">Github</a>
 				<a class="button button-ghost-green" href="">Our Repo</a>-->
-				<a class="button button-primary" href="docs/">Get Started</a>
+				<a class="button button-primary button-large" href="docs/">Get Started</a>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 homeSection text-center">
-				<div>
-					<img src="img/home/Sass.png" alt="Sass" class="homeImage">
-					<h1>Built with Sass</h1>
-					<p>Nox is built on top of the world's most powerful CSS preprocessor, SCSS. Built with mixins, so it's easy to customize to your heart's delight.</p>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 homeSection text-center">
-				<div>
-					<img src="img/home/Flexbox.png" alt="Flexbox" class="homeImage">
-					<h1>Flexbox</h1>
-					<p>Nox uses the Flexbox Grid from Bootstrap v4 to provide a seamless 12-column grid.</p>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 homeSection text-center">
-				<div>
-					<img src="img/home/DesktopFirst@2x.png" alt="Desktop" class="homeImage" style="max-width: 28%;">
-					<h1>Desktop First</h1>
-					<p>In a world full of mobile-first frameworks, this one is built for desktops first.</p>
-				</div>
-			</div>
+	<div class="homeGrid">
+		<div id="homeColumn" class="text-center">
+				<h1>Built with Sass</h1>
+				<p>Nox is built on top of the world's most powerful CSS preprocessor, SCSS. Made for customization, with tons of mixins so you can customize it to your heart's delight.</p>
+		</div>
+		<div id="homeColumn" class="text-center">
+				<h1>Flexbox</h1>
+				<p>Nox uses the Flexbox grid from Bootstrap to provide a seamless 12-column grid.</p>
+		</div>
+		<div id="homeColumn" class="text-center">
+				<h1>Desktop First</h1>
+				<p>In a world full of mobile-first frameworks, this one is built for desktop use first and foremost.</p>
 		</div>
 	</div>
 	<div class="small-break"></div>
-	<div class="container-fluid">
+	<div class="homeGrid">
+		<div id="homeColumn" class="text-center">
+			<h1>Fully Responsive</h1>
+			<p>Nox is built for all platforms in mind, with compatability with both desktop and mobile experiences.</p>
+		</div>
+		<div id="homeColumn" class="text-center">
+			<h1>Quick Start</h1>
+			<p>It's extremely easy to get started, simply include the CSS and JS and go.</p>
+		</div>
+		<div id="homeColumn" class="text-center">
+			<h1>Fast Load Times</h1>
+			<p>All of our production files are minified to optimize load times. The Nox CSS sheet is only 25.9kb.</p>
+		</div>
+	</div>
+	<!--<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
 				<h1>Fully Responsive</h1>
@@ -77,10 +80,11 @@
 				<p>All of our production files are minified to optimize load times.</p>
 			</div>
 		</div>
-	</div>
+	</div>-->
 	<footer class="footer dark">
-	    &copy; 2015-2016 Nox Framework. Created with gum and duct tape by <a href="https://zruybal.com">Zack Ruybal</a>.
+	    &copy; 2015-2017 Nox Framework. Created with gum and duct tape by <a href="https://zruybal.com">Zack Ruybal</a>.
 	</footer>
 	<script src="js/navigation.js"></script>
+	<script src="js/auto-meta.min.js"></script>
 </body>
 </html>
