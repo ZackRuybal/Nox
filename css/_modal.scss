@@ -11,6 +11,16 @@
     transform: translate(-50%, 0);
     box-shadow: 3px 3px 5px rgba(0,0,0,.2);
     z-index: 2;
+    section.header {
+        font-size: 1.6em;
+        border-bottom: #d3d3d3 solid 1px;
+    }
+    section.content {
+        font-size: 1em;
+    }
+}
+.modal {
+	display: none;
 }
 
 .modal-shade {

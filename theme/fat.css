@@ -1,0 +1,11 @@
+.homeImage {
+	max-width: 25%;
+	height: 98px;
+}
+.homeSection {
+	display: flex;
+}
+#sections {
+	display: flex;
+	flex-wrap: wrap;
+}

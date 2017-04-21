@@ -27,7 +27,8 @@
 		</ul>
 	</div>
 
-	<a href="#" class="button button-primary modal" data-content="ajax/content.html">Ajax Modal</a>
+<br><br>
+
 
 	<div class="container-fluid">
 		<div class="row">
@@ -45,13 +46,22 @@
 					</div>
 				</form>
 			</div>
+				<a href="#" class="button button-primary modalOpen">Ajax Modal</a>
 		</div>
 	</div>
+    
+    <div class="modal">
+        <section class="header">Test Modal</section>
+        <section class="content">
+            <p>I'm some content in this modal! How about that :)</p>
+        </section>
+    </div>
+    
 	<script src="js/vendor/jquery-3.0.0.min.js"></script>
 	<script src="js/navigation.js"></script>
-	<script src="js/ajax-modal.js"></script>
+	<script src="js/modal.js"></script>
 	<script>
-		$('.modal').amodal();
+		$('.modal').mrkmodal();
 	</script>
 	<script src="js/auto-meta.min.js"></script>
 </body>
