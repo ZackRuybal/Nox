@@ -778,7 +778,7 @@ body {
   box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: 400;
   padding: 0;
   margin: 0; }
 
@@ -797,7 +797,8 @@ a {
 
 p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 1.2em; }
 
 canvas, img {
   image-rendering: optimizeSpeed;
@@ -855,6 +856,9 @@ var {
 table {
   border-spacing: 0;
   border-collapse: collapse; }
+
+section:-webkit-any(article, aside, nav, section) h1 {
+  font-size: 2em; }
 
 .table {
   width: 100%;
@@ -1235,6 +1239,10 @@ ol.noindent {
   border-image-repeat: initial;
   border-radius: 4px; }
 
+.button-large {
+  padding: 12px 24px;
+  font-size: 1.45em; }
+
 .button-primary {
   background: #3786E1;
   color: #fff;
@@ -1328,16 +1336,25 @@ ol.noindent {
     font-size: 24px;
     color: #666666; }
 
-.fillPage {
+.coverPage {
   height: calc(100vh - 52px);
   margin: 0;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   border-radius: 0; }
+
+.fillPage {
+  height: calc(100vh - 52px);
+  margin: 0;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0;
+  -ms-flex-align: center;
+  align-items: center; }
+  .fillPage .content {
+    width: 100%; }
 
 .error-404 {
   display: block;
@@ -1359,7 +1376,8 @@ ol.noindent {
   background: #333;
   border-top: solid 1px #777;
   border-bottom: solid 1px #777;
-  color: #fff; }
+  color: #fff;
+  margin: 10px 0 0 0; }
 
 .footer.dark a {
   color: #5fabd8; }
@@ -1380,3 +1398,6 @@ ol.noindent {
 .well-middle {
   border-left: none;
   border-right: none; }
+
+blockquote {
+  border-left: solid #b5b5b5 3px; }
