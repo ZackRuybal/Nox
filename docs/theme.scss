@@ -1,0 +1,50 @@
+.docsContainer {
+    display: grid;
+    grid-template-columns: 75fr 25fr;
+    grid-column-gap: 10px;
+    margin: 15px 10px;
+    section .downloads {
+        margin: 10px;
+        background: #e7e6e6;
+        display: grid;
+        grid-template-columns: 50fr 50fr;
+        grid-column-gap: 10px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        h1 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        #downloadSection+#downloadSection {
+            border-left: solid #333 1px;
+        }
+    }
+    #sideBar {
+        margin-top: 10px;
+        border-radius: 3px;
+        border: solid #777 1px;
+        h3 {
+            color: #333;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            li {
+                display: block;
+                padding: 5px 0;
+                a {
+                    font-size: 1.3em;
+                }
+            }
+            li+li {
+                margin-top: 3px;
+            }
+        }
+    }
+}
