@@ -1,11 +1,40 @@
-.homeImage {
-	max-width: 25%;
-	height: 98px;
-}
-.homeSection {
-	display: flex;
-}
+
+
 #sections {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.homeGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+}
+#homeColumn h1 {
+	font-size: 2.8em;
+	font-weight: 400;
+}
+#homeColumn p {
+	font-size: 1.3em;
+}
+#homeHeader {
+	font-size: 3.9em;
+}
+.small-break {
+	margin: 30px auto 30px auto;
+}
+
+.fillPage {
+	height: 75vh;
+}
+
+@media (max-width: 740px) {
+	.homeGrid {
+		display: block;
+		grid-template-columns: 0;
+		grid-column-gap: 0;
+	}
+	.homeGrid > #homeColumn+#homeColumn {
+		margin-top: 15px;
+	}
 }
