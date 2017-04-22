@@ -33,7 +33,7 @@
 					<div id="downloadSection">
 						<h1>Minified</h1>
 						<p>
-							<a class="button button-primary" href="">Download</a>
+							<a class="button button-primary notAvailable" data-content="../ajax/notavailable.html" href="#">Download</a>
 						</p>
 					</div>
 					<div id="downloadSection">
@@ -55,7 +55,11 @@
 	<footer class="footer dark">
 	    &copy; 2015-2017 Nox Framework. Created with gum and duct tape by <a href="https://zruybal.com">Zack Ruybal</a>.
 	</footer>
+	<script src="../js/ajax-modal.min.js"></script>
 	<script src="../js/navigation.min.js"></script>
 	<script src="../js/auto-meta.min.js"></script>
+	<script>
+		$('.notAvailable').amodal();
+	</script>
 </body>
 </html>
