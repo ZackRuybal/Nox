@@ -1,0 +1,24 @@
+$darkenedBG: darken(#e7e6e6, 20%);
+.changeGrid {
+    width: 75vw;
+    margin: 50px auto;
+    display: grid;
+    grid-row-gap: 20px;
+    .row {
+        padding: 15px;
+        border-radius: 5px;
+        background: rgb(212, 212, 212);
+        display: grid;
+        grid-template-columns: 15fr 85fr;
+        grid-column-gap: 10px;
+        .version {
+            border-right: solid $darkenedBG 1px;
+        }
+        h2, li {
+            color: #000;
+        }
+        li {
+            font-weight: 400;
+        }
+    }
+}
