@@ -833,8 +833,8 @@ pre {
   border-radius: 4px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   overflow: auto;
-  -moz-tab-size: 0;
-  tab-size: 0;
+  -moz-tab-size: 4;
+  tab-size: 4;
   white-space: pre-wrap; }
 
 pre > code {
