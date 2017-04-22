@@ -31,4 +31,4 @@ $('.nav .res-only').click(function() {
 
 	// Toggles the class (obviously)
 	$appTo.toggleClass('navIsVisible');
-}).preventDefault();
+});
