@@ -1,8 +1,12 @@
 // Buttons
+
+// Button Group
 .button-group {
 	display: block;
 	padding: 5px 0;
 }
+
+// Vertical Method
 .button-group.vertical {
 	.button {
 		display: block;
@@ -13,6 +17,8 @@
 		margin-top: 5px;
 	}
 }
+
+// Main buttom wrapper class
 .button {
     display: inline-block;
     padding: 6px 12px;
@@ -34,10 +40,14 @@
     border-image-repeat: initial;
     border-radius: 4px;
 }
+
+// Large buttom
 .button-large {
 	padding: 12px 24px;
 	font-size: 1.45em;
 }
+
+// Primary background & border
 .button-primary {
     background: $primary-blue;
     color: #fff;
@@ -47,6 +57,8 @@
 	text-decoration: none;
 	color: #fff;
 }
+
+// Green background & border
 .button-green {
 	background: $primary-green;
 	color: #fff;
@@ -56,6 +68,8 @@
 	text-decoration: none;
 	color: #fff;
 }
+
+// Ghost primary version (just outline)
 .button-ghost-primary {
     background: transparent;
     color: $primary-blue;
@@ -65,6 +79,8 @@
 	color: $primary-blue;
 	text-decoration: none;
 }
+
+// Ghost green version (just outline)
 .button-ghost-green {
 	background: transparent;
 	color: $primary-green;

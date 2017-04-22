@@ -1,3 +1,4 @@
+// Overall form
 .form {
 	display: block;
 	width: 100%;
@@ -7,6 +8,7 @@
 	background: #fff;
 	margin: 10px 0;
 }
+// Labels
 .form label {
 	display: inline-block;
 	max-width: 100%;
@@ -15,6 +17,7 @@
 	font-weight: 400;
 	font-size: 16px;
 }
+// Inputs
 .form input {
 	display: block;
 	width: 100%;
@@ -44,10 +47,11 @@
 .form input::placeholder {
 	color: lighten(#333, 20%);
 }
-
+// Submission
 .form button[type="submit"] {
 	margin-top: 10px;
 }
+// Checkboxes
 .form.checkbox {
 	position: relative;
 	display: block;

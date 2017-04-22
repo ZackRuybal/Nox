@@ -25,6 +25,7 @@
 		background: transparent;
 	}
 }
+// Dark nav classes
 .nav.nav-dark {
     background: $dark-nav !important;
 }
@@ -64,12 +65,14 @@
 	text-decoration: none;
 	background: darken($primary-blue, 2%);
 }
+// Pull link groups left and right
 .nav .pull-right {
 	float: right;
 }
 .nav .pull-left {
 	float: left;
 }
+// Static nav
 .nav .nav-static {
 	position: fixed;
 }

@@ -15,6 +15,7 @@
 		color: $p-color;
 	}
 }
+// Used with the background image plugin
 .coverPage {
 	height: $fillSize;
 	margin: 0;
@@ -22,6 +23,7 @@
 	align-items: center;
 	border-radius: 0;
 }
+// Used to make a masthead fill the screen
 .fillPage {
 	height: $fillSize;
 	margin: 0;

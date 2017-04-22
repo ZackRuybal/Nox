@@ -1,3 +1,4 @@
+// The window
 .modal-window {
     position: absolute;
     left: 50%;
@@ -19,10 +20,12 @@
         font-size: 1em;
     }
 }
+// For markup modal
 .modal {
 	display: none;
 }
 
+// The class added to darken the page
 .modal-shade {
     position: fixed;
     height: 100%;
@@ -31,6 +34,7 @@
     z-index: 1;
 }
 
+// The close button
 .modal-close {
     font-size: 21px;
     font-weight: 600;

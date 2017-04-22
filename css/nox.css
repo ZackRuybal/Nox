@@ -122,11 +122,6 @@
   .res-only {
     display: block !important; } }
 
-/*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -1138,7 +1133,7 @@ table th[class*="col-"] {
   border-bottom: 1px solid #a1a1a1; }
 
 h1.text-large {
-  font-size: 45px; }
+  font-size: 2.6em; }
 
 ul.noindent {
   padding-left: 20px;
