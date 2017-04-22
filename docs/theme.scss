@@ -1,11 +1,17 @@
+$downlaodBG: #e7e6e6;
+$darkenedBG: darken(#e7e6e6, 20%);
+
 .docsContainer {
     display: grid;
     grid-template-columns: 75fr 25fr;
     grid-column-gap: 10px;
     margin: 15px 10px;
+    h1 {
+        color: #333;
+    }
     section .downloads {
         margin: 10px;
-        background: #e7e6e6;
+        background: $downlaodBG;
         display: grid;
         grid-template-columns: 50fr 50fr;
         grid-column-gap: 10px;
@@ -18,7 +24,7 @@
             margin-bottom: 10px;
         }
         #downloadSection+#downloadSection {
-            border-left: solid #333 1px;
+            border-left: solid $darkenedBG 1px;
         }
     }
     #sideBar {
