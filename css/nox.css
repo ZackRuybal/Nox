@@ -1108,6 +1108,12 @@ table th[class*="col-"] {
   display: block;
   margin: 15px auto; }
 
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
 .text-center {
   text-align: center; }
 
