@@ -27,70 +27,72 @@
 		</ul>
 	</div>
 
-<br><br>
-
-
-	<form>
-		<div class="form box-margin formOutline">
-			<label for="name">Your Name</label>
-			<input id="name" type="text" placeholder="Test">
-			<label for="email">Email Address</label>
-			<input id="email" type="email" placeholder="you@domain.com">
-			<div class="checkbox">
-				<label>
-					<input type="checkbox">
-					Test
-				</label>
+	<div class="box-margin">
+		<h2 class="section-heading">Forms</h2>
+		<pre>
+&lt;form&gt;
+	&lt;div class="form box-margin formOutline"&gt;
+		&lt;label for="name"&gt;Your Name&lt;/label&gt;
+		&lt;input id="name" type="text" placeholder="Test"&gt;
+		&lt;label for="email"&gt;Email Address&lt;/label&gt;
+		&lt;input id="email" type="email" placeholder="you@domain.com"&gt;
+		&lt;div class="checkbox"&gt;
+			&lt;label&gt;
+				&lt;input type="checkbox"&gt;
+				Test
+			&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;button type="submit" class="button button-primary"&gt;Submit&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+		</pre>
+		<form>
+			<div class="form formOutline">
+				<label for="name">Your Name</label>
+				<input id="name" type="text" placeholder="Test">
+				<label for="email">Email Address</label>
+				<input id="email" type="email" placeholder="you@domain.com">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox">
+						Test
+					</label>
+				</div>
+				<button type="submit" class="button button-primary">Submit</button>
 			</div>
-			<button type="submit" class="button button-primary">Submit</button>
-		</div>
-	</form>
+		</form>
 
-	<a href="#" class="button button-primary modalOpen">Ajax Modal</a>
+		<h2 class="section-heading">Markup Modals</h2>
+		<a href="#" class="button button-primary modalOpen">Markup Modal</a>
 
-    <div class="modal">
-        <section class="header">Test Modal</section>
-        <section class="content">
-            <p>I'm some content in this modal! How about that :)</p>
-        </section>
-    </div>
-	<br><br>
-	<style>
-		.styleBlock {
-			display: inline-block;
-			width: 100px;
-			height: 100px;
-		}
-		.primary {
-			background: #3786E1;
-		}
-		.green {
-			background: #70AA6D;
-		}
-		.red {
-			background: #AA3A32;
-		}
-		.lightblue {
-			background: #4BD7E4;
-		}
-		.orange {
-			background: #DB6127;
-		}
-		.darkblue {
-			background: #2c52a8;
-		}
-	</style>
-	<div class="styleBlock primary"></div>
-	<div class="styleBlock green"></div>
-	<div class="styleBlock red"></div>
-	<div class="styleBlock lightblue"></div>
-	<div class="styleBlock orange"></div>
-	<div class="styleBlock darkblue"></div>
+	    <div class="modal">
+	        <section class="header">Test Modal</section>
+	        <section class="content">
+	            <p>I'm some content in this modal! How about that :)</p>
+	        </section>
+	    </div>
+		<pre>
+&lt;a href="#" class="button button-primary modalOpen"&gt;Markup Modal&lt;/a&gt;
 
-	<br>
-	<a href="" class="button button-red">Test</a>
-	<a href="" class="button button-lightBlue">Test</a>
-	<a href="" class="button button-orange">Test</a>
+&lt;div class="modal"&gt;
+    &lt;section class="header"&gt;Test Modal&lt;/section&gt;
+    &lt;section class="content"&gt;
+        &lt;p&gt;I'm some content in this modal! How about that :)&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+		</pre>
+		<div class="styleBlock primary"></div>
+		<div class="styleBlock green"></div>
+		<div class="styleBlock red"></div>
+		<div class="styleBlock lightblue"></div>
+		<div class="styleBlock orange"></div>
+		<div class="styleBlock darkblue"></div>
+
+		<br>
+		<a href="" class="button button-red">Test</a>
+		<a href="" class="button button-lightBlue">Test</a>
+		<a href="" class="button button-orange">Test</a>
+	</div>
 
 	<script src="js/vendor/jquery-3.0.0.min.js"></script>
 	<script src="js/navigation.js"></script>
