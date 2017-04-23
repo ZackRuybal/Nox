@@ -5,7 +5,7 @@
 	<title>Testing Grounds - Nox</title>
 
 	<!--Styles-->
-	<link rel="stylesheet" href="css/nox-dist.css">
+	<link rel="stylesheet" href="css/nox.min.css">
 </head>
 <body>
 	<div class="nav nav-dark">
@@ -30,24 +30,21 @@
 <br><br>
 
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-10 col-xs-offset-1">
-				<form>
-					<div class="form box-margin">
-						<label for="name">Your Name</label>
-						<input id="name" type="text" placeholder="Test">
-						<label for="email">Email Address</label>
-						<input id="email" type="email" placeholder="you@domain.com">
-						<div class="checkbox">
-							<input type="checkbox"> Something Else
-						</div>
-						<button type="submit" class="button button-primary">Submit</button>
-					</div>
-				</form>
+	<form>
+		<div class="form box-margin formOutline">
+			<label for="name">Your Name</label>
+			<input id="name" type="text" placeholder="Test">
+			<label for="email">Email Address</label>
+			<input id="email" type="email" placeholder="you@domain.com">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox">
+					Test
+				</label>
 			</div>
+			<button type="submit" class="button button-primary">Submit</button>
 		</div>
-	</div>
+	</form>
 
 	<a href="#" class="button button-primary modalOpen">Ajax Modal</a>
 
@@ -94,7 +91,6 @@
 	<a href="" class="button button-red">Test</a>
 	<a href="" class="button button-lightBlue">Test</a>
 	<a href="" class="button button-orange">Test</a>
-
 
 	<script src="js/vendor/jquery-3.0.0.min.js"></script>
 	<script src="js/navigation.js"></script>
