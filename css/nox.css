@@ -1132,6 +1132,10 @@ table th[class*="col-"] {
 .page-heading {
   border-bottom: 1px solid #a1a1a1; }
 
+.section-heading {
+  border-bottom: 1px solid #a1a1a1;
+  margin-bottom: 5px; }
+
 h1.text-large {
   font-size: 2.6em; }
 
@@ -1285,9 +1289,9 @@ ol.noindent {
   border-color: #DB6127; }
 
 .modal-window {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  top: 80px;
+  top: calc(50vh - 10%);
   width: 60%;
   background: #fff;
   padding: 30px;

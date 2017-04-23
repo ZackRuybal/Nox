@@ -1,8 +1,8 @@
 // The window
 .modal-window {
-    position: absolute;
+    position: fixed;
     left: 50%;
-    top: 80px;
+    top: calc(50vh - 10%);
     width: $modal-width;
     background: $modal-bg;
     padding: $modal-padding;
