@@ -69,6 +69,39 @@
 	color: #fff;
 }
 
+// Red background & border
+.button-red {
+	background: $primary-red;
+	color: #fff;
+	border: 1px solid $primary-red;
+}
+.button-red:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+// Light blue background & border
+.button-lightBlue {
+	background: $primary-lightblue;
+	color: #fff;
+	border: 1px solid $primary-lightblue;
+}
+.button-lightBlue:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+// Orange background & border
+.button-orange {
+	background: $primary-orange;
+	color: #fff;
+	border: 1px solid $primary-orange;
+}
+.button-orange:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
 // Ghost primary version (just outline)
 .button-ghost-primary {
     background: transparent;
@@ -89,4 +122,47 @@
 .button-ghost-green:hover {
 	color: $primary-green;
 	text-decoration: none;
+}
+
+// Ghost red version (just outline)
+.button-ghost-red {
+	background: transparent;
+	transition: color ease .25s, border-color ease .25s;
+	color: $primary-red;
+	border: 1px solid $primary-red;
+	font-weight: 600;
+}
+.button-ghost-red:hover {
+	text-decoration: none;
+	transition: color ease .25s, border-color ease .25s;
+	color: lighten($primary-red, 15%);
+	border-color: lighten($primary-red, 15%);
+}
+
+// Ghost light blue version (just outline)
+.button-ghost-lightBlue {
+	background: transparent;
+	transition: color ease .25s, border-color ease .25s;
+	color: $primary-lightblue;
+	border: 1px solid $primary-lightblue;
+}
+.button-ghost-lightBlue:hover {
+	text-decoration: none;
+	transition: color ease .25s, border-color ease .25s;
+	color: darken($primary-lightblue, 20%);
+	border-color: darken($primary-lightblue, 20%);
+}
+
+// Ghost orange version (just outline)
+.button-ghost-orange {
+	background: transparent;
+	transition: color ease .25s, border-color ease .25s;
+	color: lighten($primary-orange, 7%);
+	border: 1px solid lighten($primary-orange, 7%);
+}
+.button-ghost-orange:hover {
+	text-decoration: none;
+	transition: color ease .25s, border-color ease .25s;
+	color: $primary-orange;
+	border-color: $primary-orange;
 }
