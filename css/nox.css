@@ -1256,6 +1256,33 @@ ol.noindent {
   text-decoration: none;
   color: #fff; }
 
+.button-red {
+  background: #AA3A32;
+  color: #fff;
+  border: 1px solid #AA3A32; }
+
+.button-red:hover {
+  text-decoration: none;
+  color: #fff; }
+
+.button-lightBlue {
+  background: #4BD7E4;
+  color: #fff;
+  border: 1px solid #4BD7E4; }
+
+.button-lightBlue:hover {
+  text-decoration: none;
+  color: #fff; }
+
+.button-orange {
+  background: #DB6127;
+  color: #fff;
+  border: 1px solid #DB6127; }
+
+.button-orange:hover {
+  text-decoration: none;
+  color: #fff; }
+
 .button-ghost-primary {
   background: transparent;
   color: #3786E1;
@@ -1273,6 +1300,43 @@ ol.noindent {
 .button-ghost-green:hover {
   color: #70AA6D;
   text-decoration: none; }
+
+.button-ghost-red {
+  background: transparent;
+  transition: color ease .25s, border-color ease .25s;
+  color: #AA3A32;
+  border: 1px solid #AA3A32;
+  font-weight: 600; }
+
+.button-ghost-red:hover {
+  text-decoration: none;
+  transition: color ease .25s, border-color ease .25s;
+  color: #ce625a;
+  border-color: #ce625a; }
+
+.button-ghost-lightBlue {
+  background: transparent;
+  transition: color ease .25s, border-color ease .25s;
+  color: #4BD7E4;
+  border: 1px solid #4BD7E4; }
+
+.button-ghost-lightBlue:hover {
+  text-decoration: none;
+  transition: color ease .25s, border-color ease .25s;
+  color: #1aa2af;
+  border-color: #1aa2af; }
+
+.button-ghost-orange {
+  background: transparent;
+  transition: color ease .25s, border-color ease .25s;
+  color: #e07746;
+  border: 1px solid #e07746; }
+
+.button-ghost-orange:hover {
+  text-decoration: none;
+  transition: color ease .25s, border-color ease .25s;
+  color: #DB6127;
+  border-color: #DB6127; }
 
 .modal-window {
   position: absolute;
@@ -1324,7 +1388,7 @@ ol.noindent {
   margin: 15px;
   border-radius: 5px; }
   .masthead h1 {
-    margin-bottom: .543em;
+    margin-bottom: 0.543em;
     font-size: 36px;
     color: #666666; }
   .masthead p.text-large {

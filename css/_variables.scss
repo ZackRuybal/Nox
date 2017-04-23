@@ -1,4 +1,4 @@
-// Primary Color pallete
+// Primary color pallete
 $primary-blue: #3786E1;
 $primary-green: #70AA6D;
 $primary-red: #AA3A32;
@@ -26,11 +26,26 @@ $nav-imgVAlign: middle;
 // Nav variant customization
 $dark-nav: #323232;
 
-//Masthead Customize
-$mastpadding: 50px 30px;
-$mastmargin: 15px;
-$mastBR: 5px;
-$mastHeaderSize: 36px; // Changes the font-size for h1 tags inside of Masthead
-$fillSize: calc(100vh - 52px); // Change the 52px if navbar height is custom
-$h1-color: darken($white, 60%);
-$p-color: darken($white, 60%);
+//Masthead customize
+$mast-padding: 50px 30px;
+$mast-margin: 15px;
+$mast-BR: 5px;
+$mast-headerSize: 36px; // Changes the font-size for h1 tags inside of Masthead
+$mast-fillSize: calc(100vh - 52px); // Change the 52px if navbar height is custom
+$mast-h1Color: darken($white, 60%);
+$mast-h1Margin: .543em;
+$mast-pColor: darken($white, 60%);
+$mast-pSize: 24px;
+
+// Modal customize
+$modal-bg: #fff;
+$modal-width: 60%;
+$modal-padding: 30px;
+$modal-radius: 3px;
+$modal-border: #777 solid 1px;
+$modal-shadow: 3px 3px 5px rgba(0,0,0,.2);
+$modal-headerh1size: 1.6em;
+$modal-headerh1border: #d3d3d3 solid 1px;
+$modal-contentsize: 1em;
+$modal-closesize: 21px;
+$modal-closeweight: 600;

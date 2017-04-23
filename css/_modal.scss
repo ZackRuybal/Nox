@@ -3,21 +3,21 @@
     position: absolute;
     left: 50%;
     top: 80px;
-    width: 60%;
-    background: #fff;
-    padding: 30px;
-    border-radius: 3px;
-    border: #777 solid 1px;
+    width: $modal-width;
+    background: $modal-bg;
+    padding: $modal-padding;
+    border-radius: $modal-radius;
+    border: $modal-border;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+    box-shadow: $modal-shadow;
     z-index: 2;
     section.header {
-        font-size: 1.6em;
-        border-bottom: #d3d3d3 solid 1px;
+        font-size: $modal-headerh1size;
+        border-bottom: $modal-headerh1border;
     }
     section.content {
-        font-size: 1em;
+        font-size: $modal-contentsize;
     }
 }
 // For markup modal
@@ -36,8 +36,8 @@
 
 // The close button
 .modal-close {
-    font-size: 21px;
-    font-weight: 600;
+    font-size: $modal-closesize;
+    font-weight: $modal-closeweight;
     line-height: 1;
     position: absolute;
     top: 10px;
