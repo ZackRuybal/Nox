@@ -8,6 +8,8 @@
 	<!--Styles-->
 	<link rel="stylesheet" href="../css/nox-dist.css">
 	<link rel="stylesheet" href="theme.css">
+	<link rel="stylesheet" href="../styles/default.css">
+	<link rel="stylesheet" href="font-awesome.min.css">
 
 	<!--Scripts-->
 	<script src="../js/vendor/jquery-3.0.0.min.js"></script>
@@ -27,7 +29,7 @@
 	<div class="docsContainer">
 		<div id="mainSection">
 			<section>
-				<a name="getting-started"><h1 class="page-heading">Getting Started</h1></a>
+				<a name="getting-started"><h1 class="sectionHeader">Getting Started</h1></a>
 				<p>Getting started with Nox is extremely easy. The links for download (both developer and minified) are below. After that, include everything like you normally would.</p>
 				<section class="downloads">
 					<div id="downloadSection">
@@ -43,26 +45,116 @@
 						</p>
 					</div>
 				</section>
+				<a name="in-the-box"><h1 class="sectionHeader">In the Box</h1></a>
+				<p>Nox comes in 2 forms, Minified and Developer. Both are outlined below in terms of what you get.</p>
+
+				<div class="notice notice-primary margin-topOnly">
+					<section class="header">jQuery Required</section>
+					<p>For Nox to work, it requires jQuery. It's bundled by default in the <code>js</code> folder.</p>
+				</div>
+
+				<h2>Minified Nox</h2>
+				<p>This is what you will see when you open the uncompressed folder for Nox</p>
+				<pre>
+nox/
+	css/
+		nox.css
+		nox.min.css
+		font-awesome.min.css
+	fonts/
+		FontAwesome.otf
+		fontawesome-webfont.eot
+		fontawesome-webfont.svg
+		fontawesome-webfont.ttf
+		fontawesome-webfont.woff
+		fontawesome-webfont.woff2
+	js/
+		vendor/
+			jquery-3.0.0.min.js
+			modernizr.js
+		auto-meta.js
+		auto-meta.min.js
+		modal.js
+		nox.js
+		nox.min.js
+				</pre>
+				<h2>Developer Nox</h2>
+				<p>This is what you will see when you open the uncompressed folder for Nox Developer. It also includes every file that comprises this website.</p>
+				<pre>
+nox/
+	ajax/
+	changelog/
+	css/
+	docs/
+	fonts/
+	img/
+	js/
+	release/
+	src/
+	theme/
+	index.html
+	prepros-6.config
+	README.md
+	test.html
+				</pre>
+				<a name="compilation"><h1 class="sectionHeader">Compiling CSS &amp; JS</h1></a>
+				<p>Nox was built using <a href="https://prepros.io/">PrePros</a>, so therefore the config file is included in the developer version and is very easy to just fire up PrePros and go. It monitors any changes you make and autocompiles/minifies them live so there is no need for any command line tools. Of course, if you want to, you can, but I don't support that officially as I use PrePros.</p>
+				<a name="template"><h1 class="sectionHeader">Basic Template</h1></a>
+				<p>This is the basic HTML template that you should use. Please customize this template as you see fit.</p>
+				<pre>
+<code class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt; &lt;!-- This isn't needed if you're using auto-meta.js --&gt;
+	&lt;title&gt;A Beautiful Nox Website&lt;/title&gt;
+
+	&lt;link href="css/nox.min.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Hello world!&lt;/h1&gt;
+	&lt;p&gt;This is my first Nox website! Hooray!&lt;/p&gt;
+
+	&lt;!-- jQuery &amp; scripts --&gt;
+	&lt;script src="js/vendor/jquery-3.0.0.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/nox.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+				</pre>
 			</section>
 		</div>
 		<div id="sideBar">
-			<h3>Nav</h3>
-			<ul>
-				<li><a href="#getting-started">Getting Started</a></li>
-			</ul>
+			<div class="wrapper">
+				<h3>Nav</h3>
+				<ul>
+					<li><a href="#getting-started">Getting Started</a></li>
+					<li><a href="#in-the-box">In the Box</a></li>
+					<li><a href="#compilation">Compilation</a></li>
+					<li><a href="#template">Basic Template</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
+
+	<a class="scrollTop" href=""><i class="fa fa-arrow-up"></i></a>
+
 	<footer class="footer dark">
 	    &copy; 2015-2017 Nox Framework. Created with gum and duct tape by <a href="https://zruybal.com">Zack Ruybal</a>.
 		<div class="pull-right">
 			<a href="https://get-nox.com/changelog">Changelog</a>
 		</div>
 	</footer>
+	<script src="../highlight.pack.js"></script>
 	<script src="../js/ajax-modal.min.js"></script>
 	<script src="../js/navigation.min.js"></script>
 	<script src="../js/auto-meta.min.js"></script>
+	<script src="../js/scrollTop.js"></script>
 	<script>
 		$('.notAvailable').amodal();
 	</script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

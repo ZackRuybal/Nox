@@ -776,9 +776,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   padding: 0;
   margin: 0; }
-
-h1, h2, h3, h4, h5, h6 > small {
-  color: #666666; }
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    color: #666666; }
 
 h1.text-large {
   font-size: 40px; }
@@ -817,7 +816,7 @@ code {
 pre {
   display: block;
   padding: 10px;
-  margin: 0 0 10px;
+  margin: 6px 0 10px;
   font-size: 13px;
   line-height: 1.42857143;
   color: #333;
@@ -1101,6 +1100,9 @@ table th[class*="col-"] {
 .box-margin {
   margin: 20px 15px !important; }
 
+.margin-topOnly {
+  margin: 20px 0 !important; }
+
 .small-break {
   border-top: 1px solid #777;
   height: 1px;
@@ -1155,6 +1157,26 @@ ol.noindent {
 
 .topOffset {
   top: 50px; }
+
+.scrollTop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 32px;
+  width: 32px;
+  background: #2abf81;
+  color: #fff;
+  content: "\f062";
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 15px 15px 0;
+  text-align: center;
+  display: none;
+  padding: 4px;
+  border-radius: 3px; }
+
+.scrollTop.active {
+  display: block; }
 
 .button-group {
   display: block;

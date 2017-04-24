@@ -6,8 +6,16 @@ $darkenedBG: darken(#e7e6e6, 20%);
     grid-template-columns: 75fr 25fr;
     grid-column-gap: 10px;
     margin: 15px 10px;
-    h1 {
+    h1, h2 {
         color: #333;
+    }
+    h2 {
+        margin: 7px 0;
+    }
+    .sectionHeader {
+        padding-bottom: 2px;
+        margin-bottom: 4px;
+        border-bottom: solid 1px #ccc;
     }
     section .downloads {
         margin: 10px;
@@ -29,8 +37,8 @@ $darkenedBG: darken(#e7e6e6, 20%);
     }
     #sideBar {
         margin-top: 10px;
-        border-radius: 3px;
-        border: solid #777 1px;
+        border-left: solid #777 1px;
+        height: auto;
         h3 {
             color: #333;
             font-size: 1.5em;
@@ -38,7 +46,7 @@ $darkenedBG: darken(#e7e6e6, 20%);
         }
         ul {
             list-style: none;
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
             text-align: center;
             li {
