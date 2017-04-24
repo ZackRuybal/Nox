@@ -26,6 +26,9 @@
 .box-margin {
 	margin: 20px 15px !important;
 }
+.margin-topOnly {
+	margin: 20px 0 !important;
+}
 // Small HR
 .small-break {
 	border-top: 1px solid #777;
@@ -71,4 +74,24 @@ ol.noindent {
 // Nav util (this is temporary):
 .topOffset {
 	top: 50px;
+}
+.scrollTop {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 32px;
+	width: 32px;
+	background: rgb(42, 191, 129);
+	color: #fff;
+	content: "\f062";
+	font-size: 14px;
+	text-decoration: none;
+	margin: 0 15px 15px 0;
+	text-align: center;
+	display: none;
+	padding: 4px;
+	border-radius: 3px;
+}
+.scrollTop.active {
+	display: block;
 }
