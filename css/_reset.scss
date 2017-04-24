@@ -14,9 +14,9 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 400;
 	padding: 0;
 	margin: 0;
-}
-h1,h2,h3,h4,h5,h6 > small {
-	color: darken($white, 60%);
+	small {
+		color: darken($white, 60%);
+	}
 }
 h1.text-large {
 	font-size: 40px;
@@ -54,7 +54,7 @@ code {
 pre {
 	display: block;
 	padding: 10px;
-	margin: 0 0 10px;
+	margin: 6px 0 10px;
 	font-size: 13px;
 	line-height: 1.42857143;
 	color: #333;
