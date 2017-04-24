@@ -1414,6 +1414,52 @@ ol.noindent {
   border-left: none;
   border-right: none; }
 
+.notice {
+  display: block;
+  padding: 10px; }
+  .notice .header {
+    display: block;
+    font-weight: 400;
+    font-size: 1.7em;
+    border-bottom: solid #b5b2b2 1px;
+    padding-bottom: 3px; }
+  .notice p {
+    margin-top: 5px;
+    font-size: 1.25em; }
+
+.notice-primary {
+  background: #3786E1;
+  color: #e6e6e6;
+  border-left: solid #1e6dc7 5px; }
+
+.notice-green {
+  background: #70AA6D;
+  color: #fff;
+  border-left: solid #579054 5px; }
+  .notice-green .header {
+    border-bottom-color: #fff; }
+
+.notice-red {
+  color: #fff;
+  background: #AA3A32;
+  border-left: solid #832d26 5px; }
+  .notice-red .header {
+    border-bottom-color: #fff; }
+
+.notice-lightBlue {
+  background: #4BD7E4;
+  color: #fff;
+  border-left: solid #1aa2af 5px; }
+  .notice-lightBlue .header {
+    border-bottom-color: #fff; }
+
+.notice-orange {
+  background: #DB6127;
+  color: #fff;
+  border-left: solid #b14d1e 5px; }
+  .notice-orange .header {
+    border-bottom-color: #fff; }
+
 blockquote {
   border-left: solid #b5b5b5 3px; }
 
