@@ -21,9 +21,9 @@ $( document ).ready(function() {
 	}).appendTo($navElem);
 
 	// Appends the bars to the responsive nav
-	$('.res-only').append('<span class="fa fa-bars"></span>');
+	$('.res-only').append('<div class="hamburger"><div></div><div></div><div></div></div>');
 });
-$('.nav .res-only').click(function() {
+$('.nav .res-only').click(function(e) {
 
 	// Toggles the nav
 	$toggle = $('.res-only');
@@ -36,7 +36,8 @@ $('.nav .res-only').click(function() {
 
 	// Toggles the class (obviously)
 	$appTo.toggleClass('navIsVisible');
-}).preventDefault();
+	e.preventDefault();
+});
 (function($) {
     $.fn.amodal = function(opt) {
 

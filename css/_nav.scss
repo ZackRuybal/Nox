@@ -25,6 +25,16 @@
 		background: transparent;
 	}
 }
+.nav.fixed-top {
+	position: fixed !important;
+	width: 100%;
+	margin-top: 0;
+	top: 0;
+	z-index: 1080;
+}
+.fixed-body {
+	padding-top: 52px;
+}
 // Dark nav classes
 .nav.nav-dark {
     background: $dark-nav !important;
@@ -80,12 +90,12 @@
 .nav-side {
 	position: fixed;
 	left: 0;
-	top: 50px;
 	width: 100%;
 	background: rgba(100,149,237,0.9);
 	color: #fff;
 	display: none;
 	border-top: 1px solid #70AA6D;
+	z-index: 1080;
 }
 .nav-side ul {
 	list-style: none;
@@ -115,8 +125,36 @@
 	line-height: 50px;
 	color: #fff;
 	//line-height: 50px;
+	span.ham {
+		cursor: pointer;
+		display: block;
+	}
 }
+.hamburger {
+	display:inline-block;
+	height: 50px;
+	padding-top: 8px;
+	margin: 0 5px;
+		>div {
+			margin-top: 4px;
+			background:#fff;
+			height: 5px;
+			width: 30px;
+			border-radius: 3px;
+			position:relative;
 
+		}
+
+		&:hover, &:active, &.expanded {
+			cursor:pointer;
+		div {
+			&:nth-child(2)::after {
+			  bottom:-4.5vh;
+			}
+
+		}
+	}
+}
 .nav-side.nav-open {
 	margin-left: 0;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
