@@ -9,11 +9,23 @@
 		margin-bottom: $mast-h1Margin;
 		font-size: $mast-headerSize;
 		color: $mast-h1Color;
+		font-weight: 300;
 	}
 	p.text-large {
 		font-size: $mast-pSize;
 		color: $mast-pColor;
 		line-height: normal;
+	}
+}
+// Article blocks
+article {
+	font-family: 'Roboto Slab', serif;
+	line-height: 2em;
+	font-weight: 400;
+	font-size: 18px;
+	h1 {
+		font-weight: 400;
+		font-family: 'Open Sans', sans-serif;
 	}
 }
 // Used with the background image plugin
