@@ -90,7 +90,6 @@
   width: 100%;
   background: rgba(100, 149, 237, 0.9);
   color: #fff;
-  display: none;
   border-top: 1px solid #70AA6D;
   z-index: 1080; }
 
@@ -102,7 +101,9 @@
 .nav-side ul li {
   background: #777;
   display: block;
-  text-align: center; }
+  text-align: center;
+  height: 50px;
+  line-height: 40px; }
 
 .nav-side ul li:hover {
   background: #333; }
@@ -111,7 +112,6 @@
   width: 100%;
   display: block;
   text-align: center;
-  line-height: 40px;
   color: #fff; }
 
 .res-only {
@@ -119,7 +119,6 @@
   float: right;
   margin-top: 1px;
   height: 50px;
-  line-height: 50px;
   color: #fff; }
   .res-only span.ham {
     cursor: pointer;
@@ -128,13 +127,13 @@
 .hamburger {
   display: inline-block;
   height: 50px;
-  padding-top: 8px;
+  padding-top: 12px;
   margin: 0 5px; }
   .hamburger > div {
     margin-top: 4px;
     background: #fff;
-    height: 5px;
-    width: 30px;
+    height: 3px;
+    width: 25px;
     border-radius: 3px;
     position: relative; }
   .hamburger:hover, .hamburger:active, .hamburger.expanded {
@@ -142,13 +141,17 @@
     .hamburger:hover div:nth-child(2)::after, .hamburger:active div:nth-child(2)::after, .hamburger.expanded div:nth-child(2)::after {
       bottom: -4.5vh; }
 
-.nav-side.nav-open {
-  margin-left: 0;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  display: block; }
+/*.nav-side.navIsVisible {
+	margin-left: 0;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+	display: block;
+}*/
+.nav-side .hidden {
+  display: none; }
 
 @media (max-width: 796px) {
+  .nav-side.nav-open {
+    display: none; }
   .nav-item > ul > li {
     display: none; }
   .res-only {
@@ -1666,9 +1669,6 @@ form {
   border: 1px solid #DB6127; }
 
 .form input::-webkit-input-placeholder {
-  color: #666666; }
-
-.form input::-moz-placeholder {
   color: #666666; }
 
 .form input:-ms-input-placeholder {
