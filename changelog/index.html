@@ -24,6 +24,22 @@
 
     <div class="changeGrid">
         <h1>Changelog</h1>
+		<a href="#" class="button button-primary modalOpen" style="width: 150px;">Release types</a>
+		<div class="row">
+			<section class="version">
+				<h2>A0.0.2.1</h2>
+			</section>
+			<section>
+				<h2>Changes:</h2>
+				<ul>
+					<li>Changed font weight in body to 400</li>
+					<li>Changed font weight in header to 700</li>
+					<li>Changed paragraph line height to 2em</li>
+					<li>Masthead h1 set to 300 weight</li>
+					<li>Masthead paragraph set to normal</li>
+				</ul>
+			</section>
+		</div>
         <div class="row">
             <section class="version">
                 <h2>R0.0.2</h2>
@@ -61,6 +77,13 @@
             </section>
         </div>
     </div>
+	<div class="modal">
+		<section class="header">Release Types</section>
+		<section class="content">
+			<p><b>Full</b> releases are prefixed by an R, they are packaged into Zip files on the website for your viewing pleasure.<br>
+				<b>Development</b> releases are prefixed by an A, and include small incremental updates to the code that don't merit a full release.</p>
+		</section>
+	</div>
 
     <footer class="footer dark">
 	    &copy; 2015-2017 Nox Framework. Created with gum and duct tape by <a href="https://zruybal.com">Zack Ruybal</a>.
@@ -73,5 +96,9 @@
 	<script src="../js/vendor/jquery-3.0.0.min.js"></script>
 	<script src="../js/navigation.min.js"></script>
 	<script src="../js/auto-meta.min.js"></script>
+	<script src="../js/modal.js"></script>
+	<script>
+		$('.modal').mrkmodal();
+	</script>
 </body>
 </html>
