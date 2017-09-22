@@ -2,7 +2,7 @@
 // Cleaned comments in April 17.
 $( document ).ready(function() {
 	// Adds the outline for the nav
-	$('body').append('<div class="nav-side"></div>');
+	$('.nav').append('<div class="nav-side hidden"></div>');
 
 	// Selects what the side nav class is
 	$navElem = $('.nav-side');
@@ -19,17 +19,28 @@ $( document ).ready(function() {
 	$('.res-only').append('<div class="hamburger"><div></div><div></div><div></div></div>');
 });
 $('.nav .res-only').click(function(e) {
-
-	// Toggles the nav
-	$toggle = $('.res-only');
-
-	// What to append to
-	$appTo = $('.nav-side');
-
-	// The animation
-	$appTo.slideToggle(500);
-
+	var elem = $('.nav-side');
 	// Toggles the class (obviously)
-	$appTo.toggleClass('navIsVisible');
+	var show = elem.hasClass('hidden');
+	if (show) {
+		elem.hide();
+		elem.removeClass('hidden');
+		elem.slideDown('slow');
+	} else {
+		elem.slideUp('slow', function() {
+			elem.addClass('hidden');
+			elem.show();
+		});
+	}
 	e.preventDefault();
+});
+$(window).resize(function() {
+	var screen = $(window);
+	var navi = $('.nav-side');
+	if (screen.width() > 796) {
+		navi.slideUp('slow', function() {
+			navi.addClass('hidden');
+			navi.show();
+		});
+	}
 });
