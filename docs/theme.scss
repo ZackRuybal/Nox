@@ -2,10 +2,11 @@ $downlaodBG: #e7e6e6;
 $darkenedBG: darken(#e7e6e6, 20%);
 
 .docsContainer {
+    width: 80%;
     display: grid;
-    grid-template-columns: 75fr 25fr;
+    grid-template-columns: 80fr 20fr;
     grid-column-gap: 10px;
-    margin: 15px 10px;
+    margin: 15px auto;
     h1, h2 {
         color: #333;
     }
@@ -37,27 +38,55 @@ $darkenedBG: darken(#e7e6e6, 20%);
     }
     #sideBar {
         margin-top: 10px;
-        border-left: solid #777 1px;
-        height: auto;
-        h3 {
-            color: #333;
-            font-size: 1.5em;
-            text-align: center;
-        }
-        ul {
-            list-style: none;
-            margin: 0 auto;
-            padding: 0;
-            text-align: center;
-            li {
-                display: block;
-                padding: 5px 0;
-                a {
-                    font-size: 1.3em;
+        height: 100vh;
+        position: relative;
+        padding-left: 10px;
+        .innerContent {
+            position: fixed;
+            h3 {
+                color: #333;
+                font-size: 1.5em;
+            }
+            ul {
+                list-style: none;
+                margin: 0 auto;
+                padding: 0;
+                font-size: 13px;
+                li {
+                    display: block;
+                    padding: 0;
+                    a {
+                        font-size: 1.3em;
+                        border-left: solid 1px transparent;
+                    }
+                    a:hover {
+                        border-left: solid 1px #3786E1;
+                        transition: border-left .25s;
+                    }
+                }
+                li+li {
+                    margin-top: 3px;
                 }
             }
-            li+li {
-                margin-top: 3px;
+        }
+    }
+}
+@media (max-width: 796px) { 
+    .docsContainer {
+        display: block;
+        height: auto;
+    }
+    #sideBar {
+        max-height: 100px;
+        width: 50%;
+        background: darken(#fff, 1%);
+        border: solid darken(#fff, 5%) 1px;
+        border-radius: 3px;
+        margin: 0 auto;
+        .innerContent {
+            position: relative !important;
+            >ul>li>a:hover {
+                border-left: solid 1px transparent !important;
             }
         }
     }
