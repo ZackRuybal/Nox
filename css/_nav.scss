@@ -37,7 +37,7 @@
 }
 // Dark nav classes
 .nav.nav-dark {
-    background: $dark-nav !important;
+    background: $dark-nav;
 }
 .nav.nav-dark  a:hover {
 	color: darken($white, 5%);
@@ -83,12 +83,14 @@
 	float: left;
 }
 // Static nav
-.nav .nav-static {
+.nav.nav-static {
+	top: 0;
 	position: fixed;
+	width: 100%;
 }
 // Responsive Bits
 .nav-side {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	width: 100%;
 	background: rgba(100,149,237,0.9);
@@ -107,6 +109,10 @@
 	text-align: center;
 	height: 50px;
 	line-height: 40px;
+	margin-bottom: -1px;
+}
+.nav-side ul li+li {
+	margin-left: 0px;
 }
 .nav-side ul li:hover {
 	background: #333;

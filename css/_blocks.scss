@@ -17,6 +17,15 @@
 		line-height: normal;
 	}
 }
+.masthead.inverse {
+	background: $lightBlack;
+	h1 {
+		color: $mastinv-h1Color;
+	}
+	p.text-large {
+		color: $mastinv-h1Color;
+	}
+}
 // Article blocks
 article {
 	font-family: 'Roboto Slab', serif;

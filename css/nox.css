@@ -37,7 +37,7 @@
   padding-top: 52px; }
 
 .nav.nav-dark {
-  background: #323232 !important; }
+  background: #323232; }
 
 .nav.nav-dark a:hover {
   color: #f2f2f2;
@@ -81,11 +81,13 @@
 .nav .pull-left {
   float: left; }
 
-.nav .nav-static {
-  position: fixed; }
+.nav.nav-static {
+  top: 0;
+  position: fixed;
+  width: 100%; }
 
 .nav-side {
-  position: fixed;
+  position: absolute;
   left: 0;
   width: 100%;
   background: rgba(100, 149, 237, 0.9);
@@ -103,7 +105,11 @@
   display: block;
   text-align: center;
   height: 50px;
-  line-height: 40px; }
+  line-height: 40px;
+  margin-bottom: -1px; }
+
+.nav-side ul li + li {
+  margin-left: 0px; }
 
 .nav-side ul li:hover {
   background: #333; }
@@ -1485,6 +1491,13 @@ ol.noindent {
     font-size: 24px;
     color: #666666;
     line-height: normal; }
+
+.masthead.inverse {
+  background: #333; }
+  .masthead.inverse h1 {
+    color: #fff; }
+  .masthead.inverse p.text-large {
+    color: #fff; }
 
 article {
   font-family: 'Roboto Slab', serif;
