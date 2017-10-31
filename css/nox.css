@@ -895,17 +895,9 @@ p {
   line-height: 2em; }
 
 canvas, img {
-  image-rendering: optimizeSpeed;
-  image-rendering: -o-crisp-edges;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: optimize-contrast;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: -o-pixelated;
-  image-rendering: pixelated;
-  /* CSS4, Where Available */
-  -ms-interpolation-mode: nearest-neighbor;
   border: 0;
-  vertical-align: middle; }
+  vertical-align: middle;
+  max-width: 100%; }
 
 code {
   padding: 2px 4px;
