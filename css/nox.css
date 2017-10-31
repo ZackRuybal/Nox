@@ -1,8 +1,6 @@
 /*
 * (c) 2017 Zack Ruybal. All rights reserved
 */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,800italic,300,300italic);
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 .nav {
   display: block;
   height: 52px;
@@ -160,7 +158,9 @@
   .nav-item > ul > li {
     display: none; }
   .res-only {
-    display: block !important; } }
+    display: block !important; }
+  .nav {
+    margin-bottom: -1px; } }
 
 .container-fluid {
   margin-right: auto;
@@ -864,7 +864,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   margin: 0;
@@ -1491,13 +1491,13 @@ ol.noindent {
     color: #fff; }
 
 article {
-  font-family: 'Roboto Slab', serif;
+  font-family: Georgia, "Cambria", serif;
   line-height: 2em;
   font-weight: 400;
   font-size: 18px; }
   article h1 {
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif; }
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .coverPage {
   height: calc(100vh - 52px);
