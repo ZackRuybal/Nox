@@ -1,16 +1,19 @@
-// In vanilla JS, which is being a pain in bum.
-function myFunction() {
-  document.getElementsByClassName("dropdown").classList.toggle("visible");
-}
-window.onClick = function(event) {
-  if (!event.target.matches('.dropdown-toggle')) {
-    var dropdowns = document.getElementsByClassName("dropdown");
-    var i;
-    for(i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if(openDropdown.classList.contains('visible')) {
-        openDropdown.classList.remove('visible');
-      }
-    }
+// I'm aware that this is a fairly hacky way to do things, but this is just to get it working.
+$(document).ready(function() {
+  $('.dropdown').addClass('hidden');
+});
+$('.dropdown-toggle').click(function(e) {
+  var toggle = $('.dropdown-toggle');
+  var elem = $('.dropdown');
+  var show = elem.hasClass('hidden');
+  if(show) {
+    elem.removeClass('hidden');
+    elem.addClass('visible');
+    toggle.addClass('active');
+  } else {
+    elem.removeClass('visible');
+    elem.addClass('hidden');
+    toggle.removeClass('active');
   }
-}
+  e.preventDefault();
+});

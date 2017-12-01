@@ -22,15 +22,17 @@ $nav-brandingPadding: 0 15px;
 $nav-imgHeight: 32px;
 $nav-imgWidth: 32px;
 $nav-imgVAlign: middle;
-
-// Flex nav CSS
-$fnav-branding-padding-y: 0px;
-$fnav-branding-padding-x: 15px;
-$fnav-padding-x: 1rem;
-$fnav-padding-y: 16px;
-$fnav-lineHeight: 1.5;
-$fnav-item-padding: 8px;
-$fnav-font-size: 16px;
+$nav-dropdown-padding: 8px 0;
+$nav-dropdown-margin: 2px 0 0;
+$nav-dropdown-fontSize: 16px;
+$nav-dropdown-borderRadius: 4px;
+$nav-branding-padding-y: 0px;
+$nav-branding-padding-x: 15px;
+$nav-padding-x: 16px;
+$nav-padding-y: 16px;
+$nav-lineHeight: 1.5;
+$nav-item-padding: 8px;
+$nav-font-size: 16px;
 
 // Nav variant customization
 $dark-nav: #323232;

@@ -2,13 +2,13 @@
 // Cleaned comments in April 17.
 $( document ).ready(function() {
 	// Adds the outline for the nav
-	$('<div class="nav-side hidden"></div>').insertAfter('.nav');
+	$('.nav').append('<div class="nav-side hidden"></div>');
 
 	// Selects what the side nav class is
 	$navElem = $('.nav-side');
 
 	// Selects the list
-	$navItems = $('.res-menu');
+	$navItems = $('.nav .res-menu > ul');
 
 	// Clones the content of the regular nav
 	$navItems.last().clone({
