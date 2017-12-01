@@ -1,0 +1,100 @@
+.flexnav {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: $fnav-padding-y $fnav-padding-x;
+    line-height: $fnav-lineHeight;
+    justify-content: flex-start;
+    background: $primary-blue;
+    .branding {
+        padding-top: $fnav-branding-padding-y;
+        padding-bottom: $fnav-branding-padding-y;
+        margin-right: $fnav-branding-padding-x;
+        font-weight: $nav-brandingWeight;
+        >a {
+            color: $white;
+        }
+        font-size: $nav-brandingFontSize;
+        white-space: nowrap;
+    }
+    .right {
+        margin-left: auto;
+        .dropdown {
+            right: 0;
+        }
+    }
+    .nav-group {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        list-style: none;
+        li {
+            padding-right: 0;
+            padding-left: 0;
+            list-style-position: outside;
+            a {
+                padding: $fnav-item-padding;
+                font-size: $fnav-font-size;
+                color: $white;
+            }
+        }
+    }
+    .button {
+        display: inline;
+    }
+    .dropdown {
+        display: none;
+        top: 100%;
+        z-index: 2000;
+        min-width: 10rem;
+        padding: .5rem 0;
+        margin: .125rem 0 0;
+        font-size: 1rem;
+        color: $black;
+        text-align: left;
+        list-style: none;
+        background-color: $white;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: .25rem;
+        position: absolute;
+        float: none;
+        >.hidden {
+            position: absolute;
+            display: none;
+        }
+        >.visible {
+            position: absolute;
+            display: block;
+        }
+        .item {
+            display: block;
+            width: 100%;
+            padding: .25rem 1.5rem;
+            clear: both;
+            >a {
+                color: $black;
+            }
+            text-align: inherit;
+            white-space: nowrap;
+        }
+    }
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: "";
+    color: rgba(0, 0, 0, .5);
+    margin-left: .255em;
+    vertical-align: .255em;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    border-bottom-color: rgba(0,0,0,.9);
+}

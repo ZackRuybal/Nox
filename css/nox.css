@@ -999,3 +999,104 @@ form {
   .checkbox input[type=checkbox] {
     margin-left: -20px;
     position: absolute; }
+
+.flexnav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 16px 1rem;
+  line-height: 1.5;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background: #3786E1; }
+  .flexnav .branding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    white-space: nowrap; }
+    .flexnav .branding > a {
+      color: #fff; }
+  .flexnav .right {
+    margin-left: auto; }
+    .flexnav .right .dropdown {
+      right: 0; }
+  .flexnav .nav-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style: none; }
+    .flexnav .nav-group li {
+      padding-right: 0;
+      padding-left: 0;
+      list-style-position: outside; }
+      .flexnav .nav-group li a {
+        padding: 8px;
+        font-size: 16px;
+        color: #fff; }
+  .flexnav .button {
+    display: inline; }
+  .flexnav .dropdown {
+    display: none;
+    top: 100%;
+    z-index: 2000;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #000;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: .25rem;
+    position: absolute;
+    float: none; }
+    .flexnav .dropdown > .hidden {
+      position: absolute;
+      display: none; }
+    .flexnav .dropdown > .visible {
+      position: absolute;
+      display: block; }
+    .flexnav .dropdown .item {
+      display: block;
+      width: 100%;
+      padding: .25rem 1.5rem;
+      clear: both;
+      text-align: inherit;
+      white-space: nowrap; }
+      .flexnav .dropdown .item > a {
+        color: #000; }
+
+.dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  content: "";
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: .255em;
+  vertical-align: .255em;
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.9); }
