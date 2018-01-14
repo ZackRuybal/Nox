@@ -592,7 +592,8 @@ ol.noindent {
     font-size: 16px;
     white-space: nowrap; }
     .nav .branding > a {
-      color: #fff; }
+      color: #fff;
+      padding: 8px; }
   .nav .right {
     margin-left: auto; }
     .nav .right .dropdown {
@@ -687,10 +688,7 @@ ol.noindent {
   background: #323232; }
   .nav.nav-dark a:hover {
     color: #f2f2f2;
-    text-decoration: none;
-    border-bottom: solid 1px #4d4d4d; }
-  .nav.nav-dark a.active {
-    border-bottom: solid 1px #666666; }
+    text-decoration: none; }
   .nav.nav-dark .branding:hover {
     color: #fff;
     background: transparent; }
@@ -1062,6 +1060,9 @@ form {
   color: #666666; }
 
 .form input:-ms-input-placeholder {
+  color: #666666; }
+
+.form input::-ms-input-placeholder {
   color: #666666; }
 
 .form input::placeholder {

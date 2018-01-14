@@ -15,6 +15,7 @@
         font-weight: $nav-brandingWeight;
         >a {
             color: $white;
+            padding: $nav-item-padding;
         }
         font-size: $nav-brandingFontSize;
         white-space: nowrap;
@@ -117,10 +118,6 @@
     a:hover {
         color: darken($white, 5%);
         text-decoration: none;
-        border-bottom: solid 1px darken($white, 70%);
-    }
-    a.active {
-        border-bottom: solid 1px darken($white, 60%);
     }
     .branding:hover {
         color: #fff;
