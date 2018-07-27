@@ -26,6 +26,74 @@
 		color: $mastinv-h1Color;
 	}
 }
+// Card blocks
+.card {
+	// Not recommended, would use Grid instead of this.
+	display: inline-block;
+	background: darken($white, 5%);
+	margin: 15px 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid darken($white, 10%);
+	h3 {
+		font-size: 2.5em;
+	}
+	h4 {
+		font-size: 1.5em;
+		font-weight: 400;
+	}
+	.border {
+		margin-bottom: 10px;
+		border-bottom: 1px solid darken($white, 10%);
+	}
+	.text {
+		line-height: 1.2em;
+		margin-bottom: 10px;
+	}
+	.links {
+		font-size: 1.07em;
+		a+a {
+			margin-left: 10px;
+		}
+	}
+}
+.card+.card {
+	margin-left: 0;
+}
+// Card Grid
+.card-grid {
+	display: grid;
+	// Let's repeat the columns, auto fit them, with a minmax
+	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+	.card {
+		background: darken($white, 5%);
+		margin: 15px 10px;
+		padding: 10px;
+		border-radius: 5px;
+		border: 1px solid darken($white, 10%);
+		h3 {
+			font-size: 2.5em;
+		}
+		h4 {
+			font-size: 1.5em;
+			font-weight: 400;
+		}
+		.border {
+			margin-bottom: 10px;
+			border-bottom: 1px solid darken($white, 10%);
+		}
+		.text {
+			line-height: 1.2em;
+			margin-bottom: 10px;
+		}
+		.links {
+			font-size: 1.07em;
+			a+a {
+				margin-left: 10px;
+			}
+		}
+	}
+}
 // Article blocks
 article {
 	font-family: Georgia, "Cambria", serif;
