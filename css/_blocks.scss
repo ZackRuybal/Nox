@@ -63,9 +63,10 @@
 // Card Grid
 .card-grid {
 	display: grid;
-	// Let's repeat the columns, auto fit them, with a minmax
+	// Allows the columns to repeat automatically and fit themselves into the free space. A min-max is set so that it doesn't look too small or get too cramped.
 	grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
 	.card {
+		// The same as the masthead
 		background: darken($white, 5%);
 		margin: 15px 10px;
 		padding: 10px;
@@ -92,6 +93,7 @@
 				margin-left: 10px;
 			}
 		}
+		// TODO: Add button styling
 	}
 }
 // Article blocks
@@ -117,6 +119,7 @@ article {
 .fillPage {
 	height: $mast-fillSize;
 	margin: 0;
+	// Set as flex so that everything is vertical aligned to the center. Must use the content class for this to work.
 	display: flex;
 	border-radius: 0;
 	align-items: center;
