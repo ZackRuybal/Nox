@@ -20,107 +20,111 @@
 
 // Main buttom wrapper class
 .button {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    touch-action: manipulation;
+    display: $button-display;
+    padding: $button-padding;
+    margin-bottom: $button-margin-bottom;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    line-height: $button-line-height;
+    text-align: $button-text-align;
+    white-space: $button-white-space;
+    vertical-align: $button-vertical-align;
+    touch-action: $button-touch-action;
     -webkit-user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    border-radius: 4px;
+    background-image: $button-background-image;
+    border: $button-border;
+    border-image-source: $button-border-image-source;
+    border-image-slice: $button-border-image-slice;
+    border-image-width: $button-border-image-width;
+    border-image-outset: $button-border-image-outset;
+    border-image-repeat: $button-border-image-repeat;
+    border-radius: $button-border-radius;
 }
 
-// Large buttom
+// Large button
 .button-large {
-	padding: 12px 24px;
-	font-size: 1.45em;
+	padding: $lgbutton-padding;
+	font-size: $lgbutton-font-size;
 }
 
 // Primary background & border
 .button-primary {
-    background: $primary-blue;
-    color: #fff;
-    border: 1px solid $primary-blue;
+    background: $btn-primary-background;
+    color: $btn-primary-color;
+    border: $btn-primary-border;
 }
 .button-primary:hover {
-	text-decoration: none;
-	color: #fff;
+	text-decoration: $btn-primary-hover-text-decoration;
+	color: $btn-primary-hover-color;
 }
 
 // Green background & border
 .button-green {
-	background: $primary-green;
-	color: #fff;
-	border: 1px solid $primary-green;
+	background: $btn-green-background;
+	color: $btn-green-color;
+	border: $btn-green-border;
 }
 .button-green:hover {
-	text-decoration: none;
-	color: #fff;
+	text-decoration: $btn-green-hover-text-decoration;
+	color: $btn-green-hover-color;
 }
 
 // Red background & border
 .button-red {
-	background: $primary-red;
-	color: #fff;
-	border: 1px solid $primary-red;
+	background: $btn-red-background;
+	color: $btn-red-color;
+	border: $btn-red-border;
 }
 .button-red:hover {
-	text-decoration: none;
-	color: #fff;
+	text-decoration: $btn-red-hover-text-decoration;
+	color: $btn-red-hover-color;
 }
 
 // Light blue background & border
 .button-lightBlue {
-	background: $primary-lightblue;
-	color: #fff;
-	border: 1px solid $primary-lightblue;
+	background: $btn-ltblue-background;
+	color: $btn-ltblue-color;
+	border: $btn-ltblue-border;
 }
 .button-lightBlue:hover {
-	text-decoration: none;
-	color: #fff;
+	text-decoration: $btn-ltblue-hover-text-decoration;
+	color: $btn-ltblue-hover-color;
 }
 
 // Orange background & border
 .button-orange {
-	background: $primary-orange;
-	color: #fff;
-	border: 1px solid $primary-orange;
+	background: $btn-orange-background;
+	color: $btn-orange-color;
+	border: $btn-orange-border;
 }
 .button-orange:hover {
-	text-decoration: none;
-	color: #fff;
+	text-decoration: $btn-orange-hover-text-decoration;
+	color: $btn-orange-hover-color;
 }
 
 // Ghost primary version (just outline)
 .button-ghost-primary {
-    background: transparent;
+	background: transparent;
+	transition: color ease .25s, border-color ease .25s;
     color: $primary-blue;
-    border: 1px solid $primary-blue;
+    border: $btn-primary-border;
 }
 .button-ghost-primary:hover {
 	color: $primary-blue;
+	transition: color ease .25s, border-color ease .25s;
 	text-decoration: none;
 }
 
 // Ghost green version (just outline)
 .button-ghost-green {
 	background: transparent;
+	transition: color ease .25s, border-color ease .25s;
 	color: $primary-green;
-	border: 1px solid $primary-green;
+	border: $btn-green-border;
 }
 .button-ghost-green:hover {
 	color: $primary-green;
+	transition: color ease .25s, border-color ease .25s;
 	text-decoration: none;
 }
 
@@ -129,7 +133,7 @@
 	background: transparent;
 	transition: color ease .25s, border-color ease .25s;
 	color: $primary-red;
-	border: 1px solid $primary-red;
+	border: $btn-red-border;
 	font-weight: 600;
 }
 .button-ghost-red:hover {
@@ -144,7 +148,7 @@
 	background: transparent;
 	transition: color ease .25s, border-color ease .25s;
 	color: $primary-lightblue;
-	border: 1px solid $primary-lightblue;
+	border: $btn-ltblue-border;
 }
 .button-ghost-lightBlue:hover {
 	text-decoration: none;
@@ -158,7 +162,7 @@
 	background: transparent;
 	transition: color ease .25s, border-color ease .25s;
 	color: lighten($primary-orange, 7%);
-	border: 1px solid lighten($primary-orange, 7%);
+	border: $btn-orange-border;
 }
 .button-ghost-orange:hover {
 	text-decoration: none;
