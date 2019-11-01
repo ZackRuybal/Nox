@@ -4,6 +4,12 @@
 /*
     Blocks
 */
+/*
+    Modal
+*/
+/*
+    Buttons
+*/
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -436,7 +442,7 @@ ol.noindent {
   margin-bottom: 0px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.42857143;
+  line-height: 1.42857;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -454,7 +460,7 @@ ol.noindent {
 
 .button-large {
   padding: 12px 24px;
-  font-size: 1.45em; }
+  font-size: 1.45rem; }
 
 .button-primary {
   background: #3786E1;
@@ -503,20 +509,32 @@ ol.noindent {
 
 .button-ghost-primary {
   background: transparent;
+  -webkit-transition: color ease .25s, border-color ease .25s;
+  -o-transition: color ease .25s, border-color ease .25s;
+  transition: color ease .25s, border-color ease .25s;
   color: #3786E1;
   border: 1px solid #3786E1; }
 
 .button-ghost-primary:hover {
   color: #3786E1;
+  -webkit-transition: color ease .25s, border-color ease .25s;
+  -o-transition: color ease .25s, border-color ease .25s;
+  transition: color ease .25s, border-color ease .25s;
   text-decoration: none; }
 
 .button-ghost-green {
   background: transparent;
+  -webkit-transition: color ease .25s, border-color ease .25s;
+  -o-transition: color ease .25s, border-color ease .25s;
+  transition: color ease .25s, border-color ease .25s;
   color: #70AA6D;
   border: 1px solid #70AA6D; }
 
 .button-ghost-green:hover {
   color: #70AA6D;
+  -webkit-transition: color ease .25s, border-color ease .25s;
+  -o-transition: color ease .25s, border-color ease .25s;
+  transition: color ease .25s, border-color ease .25s;
   text-decoration: none; }
 
 .button-ghost-red {
@@ -558,7 +576,7 @@ ol.noindent {
   -o-transition: color ease .25s, border-color ease .25s;
   transition: color ease .25s, border-color ease .25s;
   color: #e07746;
-  border: 1px solid #e07746; }
+  border: 1px solid #DB6127; }
 
 .button-ghost-orange:hover {
   text-decoration: none;

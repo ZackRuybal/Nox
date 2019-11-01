@@ -127,6 +127,10 @@ $notice-orange-border: solid darken($primary-orange, 10%) 5px;
 // Blockquotes
 $blockquote-border: solid rgb(181, 181, 181) 3px;
 
+/*
+    Modal
+*/
+
 // Modal customize
 $modal-bg: #fff;
 $modal-width: 60%;
@@ -139,3 +143,66 @@ $modal-headerh1border: #d3d3d3 solid 1px;
 $modal-contentsize: 1em;
 $modal-closesize: 21px;
 $modal-closeweight: 600;
+
+/*
+    Buttons
+*/
+
+// Main Button Class
+$button-display: inline-block;
+$button-padding: 6px 12px;
+$button-margin-bottom: 0px;
+$button-font-size: 14px;
+$button-font-weight: 400;
+$button-line-height: 1.42857143;
+$button-text-align: center;
+$button-white-space: nowrap;
+$button-vertical-align: middle;
+$button-touch-action: manipulation;
+$button-background-image: none;
+$button-border: 1px solid transparent;
+$button-border-image-source: initial;
+$button-border-image-slice: initial;
+$button-border-image-width: initial;
+$button-border-image-outset: initial;
+$button-border-image-repeat: initial;
+$button-border-radius: 4px;
+
+// Large Button
+$lgbutton-padding: 12px 24px;
+$lgbutton-font-size: 1.45rem;
+
+// Button Primary
+$btn-primary-background: $primary-blue;
+$btn-primary-color: #fff;
+$btn-primary-border: 1px solid $primary-blue;
+$btn-primary-hover-text-decoration: none;
+$btn-primary-hover-color: #fff;
+
+// Button Green
+$btn-green-background: $primary-green;
+$btn-green-color: #fff;
+$btn-green-border: 1px solid $primary-green;
+$btn-green-hover-text-decoration: none;
+$btn-green-hover-color: #fff;
+
+// Button Red
+$btn-red-background: $primary-red;
+$btn-red-color: #fff;
+$btn-red-border: 1px solid $primary-red;
+$btn-red-hover-text-decoration: none;
+$btn-red-hover-color: #fff;
+
+// Button Light Blue
+$btn-ltblue-background: $primary-lightblue;
+$btn-ltblue-color: #fff;
+$btn-ltblue-border: 1px solid $primary-lightblue;
+$btn-ltblue-hover-text-decoration: none;
+$btn-ltblue-hover-color: #fff;
+
+// Button Orange
+$btn-orange-background: $primary-orange;
+$btn-orange-color: #fff;
+$btn-orange-border: 1px solid $primary-orange;
+$btn-orange-hover-text-decoration: none;
+$btn-orange-hover-color: #fff;
