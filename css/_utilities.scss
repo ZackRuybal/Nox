@@ -5,6 +5,7 @@
 .image-circle {
 	border-radius: 50%;
 }
+
 // Box Appearences
 .clearfix {
 	clear: both;
@@ -15,6 +16,7 @@
 .hidden {
 	display: none !important;
 }
+
 // Different from hidden
 .invisible {
 	visibility: hidden;
@@ -29,6 +31,7 @@
 .margin-topOnly {
 	margin: 20px 0 !important;
 }
+
 // Small HR
 .small-break {
 	border-top: 1px solid #777;
@@ -44,6 +47,7 @@
 .pull-left {
 	float: left;
 }
+
 // Text Formatting
 .text-center { text-align: center; }
 .text-left { text-align: left; }
@@ -62,6 +66,7 @@
 h1.text-large {
 	font-size: 2.6em;
 }
+
 // Lists
 ul.noindent {
 	padding-left: 20px;
@@ -71,6 +76,7 @@ ol.noindent {
 	padding-left: 20px;
 	margin: 0;
 }
+
 // Nav util (this is temporary):
 .topOffset {
 	top: 50px;
