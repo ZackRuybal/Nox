@@ -1,31 +1,33 @@
 // Overall form
 form {
-	margin: 0;
-	padding: 0;
-	display: block;
+	margin: $form-margin;
+	padding: $form-padding;
+	display: $form-display;
 }
 .form {
-	display: block;
-	box-sizing: border-box;
-	font-size: 14px;
-	line-height: 1.42857143;
-	background: #fff;
-	margin: 10px 0;
+	display: $form-display;
+	box-sizing: $form-box-sizing;
+	font-size: $form-font-size;
+	line-height: $form-line-height;
+	background: $form-background;
+	margin: $form-margin;
 }
 .formOutline {
-	border: solid rgba(175, 175, 175, 0.76) 1px;
-	border-radius: 5px;
-	padding: 15px;
+	border: $formoutline-border;
+	border-radius: $formoutline-border-radius;
+	padding: $formoutline-padding;
 }
+
 // Labels
 .form label {
-	display: block;
-	max-width: 100%;
-	margin-bottom: 2px;
-	margin-top: 5px;
-	font-weight: 400;
-	font-size: 16px;
+	display: $flabel-display;
+	max-width: $flabel-max-width;
+	margin-bottom: $flabel-margin-bottom;
+	margin-top: $flabel-margin-top;
+	font-weight: $flabel-font-weight;
+	font-size: $flabel-font-size;
 }
+
 // Inputs
 .form input[type="text"],
 .form input[type="password"],
@@ -58,23 +60,25 @@ form {
 .form input::placeholder {
 	color: lighten(#333, 20%);
 }
+
 // Submission
 .form button[type="submit"] {
-	margin-top: 10px;
+	margin-top: $formsubmit-margin-top;
 }
+
 // Checkboxes
 .checkbox {
-	display: block;
-	position: relative;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-left: 20px;
+	display: $fchk-display;
+	position: $fchk-position;
+	margin-top: $fchk-margin-top;
+	margin-bottom: $fchk-margin-bottom;
+	padding-left: $fchk-padding-left;
 	label {
-		font-size: 1em;
-		cursor: pointer;
+		font-size: $fchk-label-font-size;
+		cursor: $fchk-label-cursor;
 	}
 	input[type=checkbox] {
-		margin-left: -20px;
-		position: absolute;
+		margin-left: $fchk-type-checkbox-margin-left;
+		position: $fchk-type-checkbox-position;
 	}
 }

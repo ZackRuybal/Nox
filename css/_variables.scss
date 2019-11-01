@@ -228,3 +228,48 @@ $btn-orange-color: #fff;
 $btn-orange-border: 1px solid $primary-orange;
 $btn-orange-hover-text-decoration: none;
 $btn-orange-hover-color: #fff;
+
+/*
+    Forms
+*/
+
+// Form
+$form-margin: 0;
+$form-padding: 0;
+$form-display: block;
+
+$form-box-sizing: border-box;
+$form-font-size: 14px;
+$form-line-height: 1.42857143;
+$form-background: #fff;
+$form-margin: 10px 0;
+
+// Outlined Form
+$formoutline-border: solid rgba(175, 175, 175, 0.76) 1px;
+$formoutline-border-radius: 5px;
+$formoutline-padding: 15px;
+
+// Label
+$flabel-display: block;
+$flabel-max-width: 100%;
+$flabel-margin-bottom: 2px;
+$flabel-margin-top: 5px;
+$flabel-font-weight: 400;
+$flabel-font-size: 16px;
+
+// Inputs
+    // Soon™
+
+// Submission
+$formsubmit-margin-top: 10px;
+
+// Checkboxes
+$fchk-display: block;
+$fchk-position: relative;
+$fchk-margin-top: 10px;
+$fchk-margin-bottom: 10px;
+$fchk-padding-left: 20px;
+$fchk-label-font-size: 1rem;
+$fchk-label-cursor: pointer;
+$fchk-type-checkbox-margin-left: -20px;
+$fchk-type-checkbox-position: absolute;
