@@ -18,6 +18,7 @@
 */
 /*
     Navigation
+    A ton more will be added later
 */
 /*
     Blocks
@@ -865,10 +866,10 @@ ol.noindent {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   z-index: 2; }
   .modal-window section.header {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     border-bottom: #d3d3d3 solid 1px; }
   .modal-window section.content {
-    font-size: 1em; }
+    font-size: 1rem; }
 
 .modal {
   display: none; }

@@ -31,6 +31,7 @@ $lightBlack: #333; // AKA dark gray
 
 /*
     Navigation
+    A ton more will be added later
 */
 
 // Navigation
@@ -153,18 +154,25 @@ $blockquote-border: solid rgb(181, 181, 181) 3px;
     Modal
 */
 
-// Modal customize
+// Modal Customization
 $modal-bg: #fff;
 $modal-width: 60%;
 $modal-padding: 30px;
-$modal-radius: 3px;
+$modal-border-radius: 3px;
 $modal-border: #777 solid 1px;
 $modal-shadow: 3px 3px 5px rgba(0,0,0,.2);
-$modal-headerh1size: 1.6em;
-$modal-headerh1border: #d3d3d3 solid 1px;
-$modal-contentsize: 1em;
+$modal-header-h1-font-size: 1.6rem;
+$modal-header-h1-border: #d3d3d3 solid 1px;
+$modal-contentsize: 1rem;
 $modal-closesize: 21px;
 $modal-closeweight: 600;
+
+// Modal Shade
+$shade-position: fixed;
+$shade-height: 100%;
+$shade-width: 100%;
+$shade-background-color: rgba(0,0,0,.7);
+$shade-z-index: 1;
 
 /*
     Buttons
