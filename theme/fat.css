@@ -7,10 +7,15 @@ Unminified. It's fat.
 	flex-wrap: wrap;
 }
 
+.gridContainer {
+	margin: 80px 20px;
+	padding: 0;
+}
+
 .homeGrid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-column-gap: 10px;
+	grid-column-gap: 30px;
 	margin-top: 1em;
 }
 #homeColumn h1 {
