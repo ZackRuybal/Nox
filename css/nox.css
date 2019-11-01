@@ -2,6 +2,24 @@
 * (c) 2017 Zack Ruybal. All rights reserved
 */
 /*
+
+    GENERAL NOTES:
+        This section is essentially still a WIP. I decided to mixinify this
+        project to ease customization, though it takes a while to move
+        everything over by hand. Right now, there's a mix of camel case,
+        listed-as-the-css, and other just wrong variables. I'll be working to
+        make it so that vars are in the following format:
+        `$itemname-css: value;`. So, bare with the inconsistencies here as I
+        work out the kinks :)
+
+*/
+/*
+    Colors
+*/
+/*
+    Navigation
+*/
+/*
     Blocks
 */
 /*

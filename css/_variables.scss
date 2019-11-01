@@ -1,3 +1,21 @@
+/*
+
+    GENERAL NOTES:
+        This section is essentially still a WIP. I decided to mixinify this
+        project to ease customization, though it takes a while to move
+        everything over by hand. Right now, there's a mix of camel case,
+        listed-as-the-css, and other just wrong variables. I'll be working to
+        make it so that vars are in the following format:
+        `$itemname-css: value;`. So, bare with the inconsistencies here as I
+        work out the kinks :)
+
+*/
+
+
+/*
+    Colors
+*/
+
 // Primary color pallete
 $primary-blue: #3786E1;
 $primary-green: #70AA6D;
@@ -10,6 +28,10 @@ $dark-blue: #2c52a8;
 $white: #fff;
 $black: #000;
 $lightBlack: #333; // AKA dark gray
+
+/*
+    Navigation
+*/
 
 // Navigation
 $nav-height: 52px;
