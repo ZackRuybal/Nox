@@ -6,15 +6,15 @@
     width: $modal-width;
     background: $modal-bg;
     padding: $modal-padding;
-    border-radius: $modal-radius;
+    border-radius: $modal-border-radius;
     border: $modal-border;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     box-shadow: $modal-shadow;
     z-index: 2;
     section.header {
-        font-size: $modal-headerh1size;
-        border-bottom: $modal-headerh1border;
+        font-size: $modal-header-h1-font-size;
+        border-bottom: $modal-header-h1-border;
     }
     section.content {
         font-size: $modal-contentsize;
@@ -27,11 +27,11 @@
 
 // The class added to darken the page
 .modal-shade {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,.7);
-    z-index: 1;
+    position: $shade-position;
+    height: $shade-height;
+    width: $shade-width;
+    background-color: $shade-background-color;
+    z-index: $shade-z-index;
 }
 
 // The close button
