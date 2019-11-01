@@ -1,6 +1,9 @@
 /*
 * (c) 2017 Zack Ruybal. All rights reserved
 */
+/*
+    Blocks
+*/
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -882,18 +885,18 @@ ol.noindent {
   border-radius: 5px;
   border: 1px solid #e6e6e6; }
   .card h3 {
-    font-size: 2.5em; }
+    font-size: 2.5rem; }
   .card h4 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 400; }
   .card .border {
     margin-bottom: 10px;
     border-bottom: 1px solid #e6e6e6; }
   .card .text {
-    line-height: 1.2em;
+    line-height: 1.2rem;
     margin-bottom: 10px; }
   .card .links {
-    font-size: 1.07em; }
+    font-size: 1.07rem; }
     .card .links a + a {
       margin-left: 10px; }
 
@@ -901,6 +904,7 @@ ol.noindent {
   margin-left: 0; }
 
 .card-grid {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)); }
   .card-grid .card {
@@ -910,24 +914,24 @@ ol.noindent {
     border-radius: 5px;
     border: 1px solid #e6e6e6; }
     .card-grid .card h3 {
-      font-size: 2.5em; }
+      font-size: 2.5rem; }
     .card-grid .card h4 {
-      font-size: 1.5em;
+      font-size: 1.5rem;
       font-weight: 400; }
     .card-grid .card .border {
       margin-bottom: 10px;
       border-bottom: 1px solid #e6e6e6; }
     .card-grid .card .text {
-      line-height: 1.2em;
+      line-height: 1.2rem;
       margin-bottom: 10px; }
     .card-grid .card .links {
-      font-size: 1.07em; }
+      font-size: 1.07rem; }
       .card-grid .card .links a + a {
         margin-left: 10px; }
 
 article {
   font-family: Georgia, "Cambria", serif;
-  line-height: 2em;
+  line-height: 2rem;
   font-weight: 400;
   font-size: 18px; }
   article h1 {
@@ -1007,12 +1011,12 @@ article {
   .notice .header {
     display: block;
     font-weight: 400;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     border-bottom: solid #b5b2b2 1px;
     padding-bottom: 3px; }
   .notice p {
     margin-top: 5px;
-    font-size: 1.25em; }
+    font-size: 1.25rem; }
 
 .notice-primary {
   background: #3786E1;

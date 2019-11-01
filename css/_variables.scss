@@ -11,7 +11,7 @@ $white: #fff;
 $black: #000;
 $lightBlack: #333; // AKA dark gray
 
-//Main nav css
+// Navigation
 $nav-height: 52px;
 $nav-lineHeight: 50px;
 $nav-brandingWeight: 400;
@@ -34,10 +34,15 @@ $nav-lineHeight: 1.5;
 $nav-item-padding: 8px;
 $nav-font-size: 16px;
 
-// Nav variant customization
+// Navigation Variants
 $dark-nav: #323232;
 
-//Masthead customize
+
+/*
+    Blocks
+*/
+
+// Masthead
 $mast-padding: 50px 30px;
 $mast-margin: 15px;
 $mast-BR: 5px;
@@ -48,9 +53,79 @@ $mast-h1Margin: .543em;
 $mast-pColor: darken($white, 60%);
 $mast-pSize: 24px;
 
-//Masthaed inverse customize
+// Masthead Inverse
 $mastinv-h1Color: $white;
 $mastinv-pColor: $white;
+
+// Card
+$cardmargin: 15px 10px;
+$cardpadding: 10px;
+$cardborderradius: 5px;
+$cardborder: 1px solid darken($white, 10%);
+$cardh3: 2.5rem;
+$cardh4: 1.5rem;
+$cardborder-margin: 10px;
+$cardborder-border: 1px solid darken($white, 10%);
+$cardtext-lh: 1.2rem;
+$cardtext-margin: 10px;
+$cardlinks: 1.07rem;
+
+// Article
+$articlefont: Georgia, "Cambria", serif;
+$article-lh: 2rem;
+$article-fontsize: 18px;
+$article-h1: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// 404 Page
+$e404-display: block;
+$e404-padding: 50px 60px;
+$e404-h1-fontsize: 45px;
+$e404-p-fontsize: 30px;
+
+// Footer
+$footer-border-top: solid 1px #eee;
+$footer-border-bottom: solid 1px #eee;
+$footer-margin: 10px 0;
+$footer-display: block;
+$footer-padding: 20px;
+
+// Footer Dark
+$footerdark-background: $lightBlack;
+$footerdark-border-top: solid 1px #777;
+$footerdark-border-bottom: solid 1px #777;
+$footerdark-color: #fff;
+$footerdark-margin: 10px 0 0 0;
+$footerdark-link: #5fabd8;
+
+// Wells
+$well-background: darken($white, 5%);
+$well-padding: 10px;
+$well-width: 96%;
+$well-display: block;
+$well-border: 1px solid darken($white, 20%);
+
+// Notices
+$notice-display: block;
+$notice-padding: 10px;
+$notice-header-display: block;
+$notice-header-font: 1.7rem;
+$notice-header-border-bottom: solid darken(#e7e6e6, 20%) 1px;
+$notice-header-padding-bottom: 3px;
+$notice-p-margin-top: 5px;
+$notice-p-font: 1.25rem;
+
+// Notice Variants
+$notice-variant-header: #fff;
+$notice-primary-color: lighten(#333, 70%);
+$notice-primary-border: solid darken($primary-blue, 10%) 5px;
+$notice-variant-color: #fff;
+$notice-green-border: solid darken($primary-green, 10%) 5px;
+$notice-red-border: solid darken($primary-red, 10%) 5px;
+$notice-lightblue-border: solid darken($primary-lightblue, 20%) 5px;
+$notice-orange-border: solid darken($primary-orange, 10%) 5px;
+
+// Blockquotes
+$blockquote-border: solid rgb(181, 181, 181) 3px;
 
 // Modal customize
 $modal-bg: #fff;

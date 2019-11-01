@@ -31,27 +31,27 @@
 	// Not recommended, would use Grid instead of this.
 	display: inline-block;
 	background: darken($white, 5%);
-	margin: 15px 10px;
-	padding: 10px;
-	border-radius: 5px;
-	border: 1px solid darken($white, 10%);
+	margin: $cardmargin;
+	padding: $cardpadding;
+	border-radius: $cardborderradius;
+	border: $cardborder;
 	h3 {
-		font-size: 2.5em;
+		font-size: $cardh3;
 	}
 	h4 {
-		font-size: 1.5em;
+		font-size: $cardh4;
 		font-weight: 400;
 	}
 	.border {
-		margin-bottom: 10px;
-		border-bottom: 1px solid darken($white, 10%);
+		margin-bottom: $cardborder-margin;
+		border-bottom: $cardborder-border;
 	}
 	.text {
-		line-height: 1.2em;
-		margin-bottom: 10px;
+		line-height: $cardtext-lh;
+		margin-bottom: $cardtext-margin;
 	}
 	.links {
-		font-size: 1.07em;
+		font-size: $cardlinks;
 		a+a {
 			margin-left: 10px;
 		}
@@ -68,27 +68,27 @@
 	.card {
 		// The same as the masthead
 		background: darken($white, 5%);
-		margin: 15px 10px;
-		padding: 10px;
-		border-radius: 5px;
-		border: 1px solid darken($white, 10%);
+		margin: $cardmargin;
+		padding: $cardpadding;
+		border-radius: $cardborderradius;
+		border: $cardborder;
 		h3 {
-			font-size: 2.5em;
+			font-size: $cardh3;
 		}
 		h4 {
-			font-size: 1.5em;
+			font-size: $cardh4;
 			font-weight: 400;
 		}
 		.border {
-			margin-bottom: 10px;
-			border-bottom: 1px solid darken($white, 10%);
+			margin-bottom: $cardborder-margin;
+			border-bottom: $cardborder-border;
 		}
 		.text {
-			line-height: 1.2em;
-			margin-bottom: 10px;
+			line-height: $cardtext-lh;
+			margin-bottom: $cardtext-margin;
 		}
 		.links {
-			font-size: 1.07em;
+			font-size: $cardlinks;
 			a+a {
 				margin-left: 10px;
 			}
@@ -98,13 +98,13 @@
 }
 // Article blocks
 article {
-	font-family: Georgia, "Cambria", serif;
-	line-height: 2em;
+	font-family: $articlefont;
+	line-height: $article-lh;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: $article-fontsize;
 	h1 {
 		font-weight: 400;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: $article-h1;
 	}
 }
 // Used with the background image plugin
@@ -129,33 +129,33 @@ article {
 }
 // 404
 .error-404 {
-	display: block;
-	padding: 50px 60px;
+	display: $e404-display;
+	padding: $e404-padding;
 	h1 {
-		font-size: 45px;
+		font-size: $e404-h1-fontsize;
 		font-weight: 400;
 	}
 	p {
-		font-size: 30px;
+		font-size: $e404-p-fontsize;
 	}
 }
 // Footer
 .footer {
-	border-top: solid 1px #eee;
-	border-bottom: solid 1px #eee;
-	margin: 10px 0;
-	display: block;
-	padding: 20px;
+	border-top: $footer-border-top;
+	border-bottom: $footer-border-bottom;
+	margin: $footer-margin;
+	display: $footer-display;
+	padding: $footer-padding;
 }
 .footer.dark {
-	background: $lightBlack;
-	border-top: solid 1px #777;
-	border-bottom: solid 1px #777;
-	color: #fff;
-	margin: 10px 0 0 0;
+	background: $footerdark-background;
+	border-top: $footerdark-border-top;
+	border-bottom: $footerdark-border-bottom;
+	color: $footerdark-color;
+	margin: $footerdark-margin;
 }
 .footer.dark a {
-	color: #5fabd8;
+	color: $footerdark-link;
 }
 .footer.stickyFooter {
 	position: fixed;
@@ -166,11 +166,11 @@ article {
 
 // Wells
 .well {
-	background: darken($white, 5%);
-	padding: 10px;
-	width: 96%;
-	display: block;
-	border: 1px solid darken($white, 20%);
+	background: $well-background;
+	padding: $well-padding;
+	width: $well-width;
+	display: $well-display;
+	border: $well-border;
 }
 .well-middle {
 	border-left: none;
@@ -179,59 +179,59 @@ article {
 
 // Notices
 .notice {
-	display: block;
-	padding: 10px;
+	display: $notice-display;
+	padding: $notice-padding;
 	.header {
-		display: block;
+		display: $notice-header-display;
 		font-weight: 400;
-		font-size: 1.7em;
-		border-bottom: solid darken(#e7e6e6, 20%) 1px;
-		padding-bottom: 3px;
+		font-size: $notice-header-font;
+		border-bottom: $notice-header-border-bottom;
+		padding-bottom: $notice-header-padding-bottom;
 	}
 	p {
-		margin-top: 5px;
-		font-size: 1.25em;
+		margin-top: $notice-p-margin-top;
+		font-size: $notice-p-font;
 	}
 }
 .notice-primary {
 	background: $primary-blue;
-	color: lighten(#333, 70%);
-	border-left: solid darken($primary-blue, 10%) 5px;
+	color: $notice-primary-color;
+	border-left: $notice-primary-border;
 }
 .notice-green {
 	background: $primary-green;
-	color: #fff;
-	border-left: solid darken($primary-green, 10%) 5px;
+	color: $notice-variant-color;
+	border-left: $notice-green-border;
 	.header {
-		border-bottom-color: #fff;
+		border-bottom-color: $notice-variant-header;
 	}
 }
 .notice-red {
-	color: #fff;
+	color: $notice-variant-color;
 	background: $primary-red;
-	border-left: solid darken($primary-red, 10%) 5px;
+	border-left: $notice-red-border;
 	.header {
-		border-bottom-color: #fff;
+		border-bottom-color: $notice-variant-header;
 	}
 }
 .notice-lightBlue {
 	background: $primary-lightblue;
-	color: #fff;
-	border-left: solid darken($primary-lightblue, 20%) 5px;
+	color: $notice-variant-color;
+	border-left: $notice-lightblue-border;
 	.header {
-		border-bottom-color: #fff;
+		border-bottom-color: $notice-variant-header;
 	}
 }
 .notice-orange {
 	background: $primary-orange;
-	color: #fff;
-	border-left: solid darken($primary-orange, 10%) 5px;
+	color: $notice-variant-color;
+	border-left: $notice-orange-border;
 	.header {
-		border-bottom-color: #fff;
+		border-bottom-color: $notice-variant-header;
 	}
 }
 
 // Blockquotes
 blockquote {
-	border-left: solid rgb(181, 181, 181) 3px;
+	border-left: $blockquote-border;
 }
