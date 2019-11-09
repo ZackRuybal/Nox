@@ -73,10 +73,12 @@ canvas, img {
   max-width: 100%; }
 
 code {
-  padding: 2px 4px;
+  padding: 4px 6px;
   font-size: 90%;
-  color: #ca3230;
-  background: #bdc3c7;
+  color: #3786E1;
+  font-weight: 600;
+  letter-spacing: .06rem;
+  background: #cdcfcf;
   border-radius: 4px; }
 
 pre {
